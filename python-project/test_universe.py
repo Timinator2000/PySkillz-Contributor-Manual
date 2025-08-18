@@ -36,6 +36,7 @@ def test_count_all_stars():
         success()
 
         if sum_builtin_used:
+            send_msg("My personal Yoda, you are. 🙏", "Added code.")
             send_msg("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ")
             send_msg("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ")
             send_msg("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .")
