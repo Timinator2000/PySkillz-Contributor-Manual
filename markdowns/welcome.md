@@ -1,6 +1,52 @@
 ![PySkillz](../graphics/PySkillzBanner.png)
 
 
+Great question 👍 — this is a **really important distinction** in the GitHub workflow.
+
+---
+
+### 🔹 Typical contributor workflow (the one GitHub recommends)
+
+1. The contributor **forks your repository on GitHub**.
+
+   * This creates their own copy of your repo under their account.
+   * Example:
+
+     * Your repo: `github.com/YourName/PySkillz`
+     * Their fork: `github.com/OtherUser/PySkillz`
+
+2. The contributor then **clones *their fork*** to their local machine:
+
+   ```bash
+   git clone https://github.com/OtherUser/PySkillz.git
+   ```
+
+3. They make changes, commit, and push **to their fork** (since they don’t have write access to yours).
+
+4. From GitHub, they open a **Pull Request** back to your repo (`YourName/PySkillz`).
+
+---
+
+### 🔹 Alternative (less common)
+
+* If the other person already has **collaborator access** to your repo (you invited them), they can just **clone your repo directly** and push branches.
+* In this case, no fork is necessary.
+
+---
+
+✅ So in your case (since you said earlier your repo is public, but you haven’t invited others):
+👉 Contributors will **fork on GitHub first, then clone their fork**.
+
+That way, they never push directly to your repo — they only send you pull requests to review.
+
+---
+
+Do you want me to update your **contributor manual** to explicitly state this “fork → clone → PR” workflow so it’s crystal clear for contributors?
+
+
+
+
+
 
 Got it! You want to **clone a GitHub repository** to your local machine. Here’s a clear step-by-step:
 
