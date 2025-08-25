@@ -1,3 +1,7 @@
+![PySkillz](../graphics/PySkillzBanner.png)
+
+
+
 Got it! You want to **clone a GitHub repository** to your local machine. Here’s a clear step-by-step:
 
 ---

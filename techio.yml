@@ -1,4 +1,6 @@
 title: PySkillz Contributor Manual
+cover: graphics/PySkillzLogo.png
+
 plan:
 - title: Welcome
   statement: markdowns/welcome.md
