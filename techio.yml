@@ -2,9 +2,9 @@ title: PySkillz Contributor Manual
 plan:
 - title: Welcome
   statement: markdowns/welcome.md
-projects:
-  python:
-    root: /python-project
-    runner:
-      name: python
-      version: '3'
+# projects:
+#   python:
+#     root: /python-project
+#     runner:
+#       name: python
+#       version: '3'
