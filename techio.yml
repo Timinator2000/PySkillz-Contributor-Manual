@@ -3,7 +3,9 @@ cover: graphics/PySkillzLogo.png
 
 plan:
   - title: Welcome
-    statement: markdowns/welcome.md
+    plan:
+      - title: Introduction
+        statement: markdowns/welcome.md
   - title: Making Contributions to PySkillz
     plan:
       - title: Making Contributions
