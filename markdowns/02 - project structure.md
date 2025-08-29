@@ -52,6 +52,8 @@ Configuration file used by the Tech.io platform to control the layout of the PyS
 
 * Only PySkillz team members are allowed to update it, because any change directly affects how the playground is displayed to learners.
 
+__TL;DR__
+
 >👉 As a contributor, you will spend the vast majority of your time in the `python-project` folder where you add the starter code, solution, and tests for your new exercise.
 
 # .gitignore
