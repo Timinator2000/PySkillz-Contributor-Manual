@@ -48,7 +48,7 @@ Specifies which files/folders Git should ignore (temporary files, caches, etc.).
 
 Configuration file used by the Tech.io platform to control the layout of the PySkillz playground.
 
-* __Contributors should never modify this file.__
+* ⚠️ __Contributors should never modify this file.__
 
 * Only PySkillz team members are allowed to update it, because any change directly affects how the playground is displayed to learners.
 
