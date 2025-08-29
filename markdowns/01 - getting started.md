@@ -34,7 +34,9 @@ Before you can contribute to PySkillz, you’ll need your own copy of the reposi
 
 ```bash
 git --version
+
 ```
+
 
     * If Git is not installed, download it from [git-scm.com](https://git-scm.com/) and follow the installation instructions for your operating system.
 
@@ -50,7 +52,9 @@ git --version
 
 ```bash
 git clone <your-fork-url>
+
 ```
+
 
     * This creates a local copy of your forked repository that you can work in.
 
