@@ -173,4 +173,4 @@ if __name__ == "__main__":
 
 ************
 
-[![Skillz Catalog](../../graphics/PySkillzFooter.png)](skillz-catalog)
+[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)

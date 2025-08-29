@@ -120,4 +120,4 @@ In the repository, you’ll see many more files, and the file names will reflect
 
 ************
 
-[![Skillz Catalog](../../graphics/PySkillzFooter.png)](skillz-catalog)
+[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)

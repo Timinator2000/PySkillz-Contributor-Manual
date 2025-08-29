@@ -4,4 +4,4 @@
 
 ************
 
-[![Skillz Catalog](../../graphics/PySkillzFooter.png)](skillz-catalog)
+[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)

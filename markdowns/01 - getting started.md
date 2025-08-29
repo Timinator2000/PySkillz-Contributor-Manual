@@ -62,4 +62,4 @@ With the repository successfully cloned to your local machine, the next step is 
 
 ************
 
-[![Skillz Catalog](../../graphics/PySkillzFooter.png)](skillz-catalog)
+[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)

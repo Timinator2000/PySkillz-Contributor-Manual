@@ -27,4 +27,4 @@ Users of the playground are encouraged to print debug output to `sys.stderr`. On
 
 ************
 
-[![Skillz Catalog](../../graphics/PySkillzFooter.png)](skillz-catalog)
+[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)

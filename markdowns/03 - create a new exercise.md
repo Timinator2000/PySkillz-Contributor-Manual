@@ -62,4 +62,4 @@ On the next page, we'll explore the details of each of the three Python files th
 
 ************
 
-[![Skillz Catalog](../../graphics/PySkillzFooter.png)](skillz-catalog)
+[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
