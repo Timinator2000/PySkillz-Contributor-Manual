@@ -9,17 +9,17 @@ plan:
   - title: Making Contributions to PySkillz
     plan:
       - title: Making Contributions
-        statement: markdowns/90 - making contributions/01 - getting started.md
+        statement: markdowns/01 - getting started.md
       - title: Project Structure
-        statement: markdowns/90 - making contributions/02 - project structure.md
+        statement: markdowns/02 - project structure.md
       - title: Creating a New Exercise
-        statement: markdowns/90 - making contributions/03 - create a new exercise.md
+        statement: markdowns/03 - create a new exercise.md
       - title: File Contents
-        statement: markdowns/90 - making contributions/04 - file contents.md
+        statement: markdowns/04 - file contents.md
       - title: Testing
-        statement: markdowns/90 - making contributions/05 - testing.md
+        statement: markdowns/05 - testing.md
       - title: Exercise Placement
-        statement: markdowns/90 - making contributions/10 - exercise placement.md
+        statement: markdowns/10 - exercise placement.md
 
 
 # projects:
