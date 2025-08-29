@@ -22,15 +22,15 @@ Before you can contribute to PySkillz, you’ll need your own copy of the reposi
 
 1. Fork the PySkillz repository on GitHub
 
-* Go to the [PySkillz GitHub page](https://github.com/Timinator2000/PySkillz).
+  * Go to the [PySkillz GitHub page](https://github.com/Timinator2000/PySkillz).
 
-* Click the Fork button in the top-right corner.
+  * Click the Fork button in the top-right corner.
 
-* This creates your own copy of PySkillz under your GitHub account.
+  * This creates your own copy of PySkillz under your GitHub account.
 
 2. Make sure Git is installed locally
 
-* On most systems, you can check by opening a terminal and running:
+  * On most systems, you can check by opening a terminal and running:
 
 ```bash
 git --version
@@ -42,17 +42,17 @@ git --version
 
 3. Clone your fork to your local machine
 
-* Navigate to your new fork on GitHub.
+  * Navigate to your new fork on GitHub.
 
-* Click the green Code button and copy the HTTPS URL.
+  * Click the green Code button and copy the HTTPS URL.
 
-* In your terminal (or Git Bash on Windows), run:
+  * In your terminal (or Git Bash on Windows), run:
 
 ```bash
 git clone <your-fork-url>
 ```
 
-* This creates a local copy of your forked repository that you can work in.
+  * This creates a local copy of your forked repository that you can work in.
 
 After completing these steps, you’ll have your own local workspace connected to your GitHub fork. All of your changes will be made here before being submitted back to the main PySkillz project.
 
