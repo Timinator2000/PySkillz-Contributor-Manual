@@ -32,11 +32,9 @@ Before you can contribute to PySkillz, you’ll need your own copy of the reposi
 
     * On most systems, you can check by opening a terminal and running:
 
-```bash
-git --version
-
-```
-
+    ```bash
+    git --version
+    ```
 
     * If Git is not installed, download it from [git-scm.com](https://git-scm.com/) and follow the installation instructions for your operating system.
 
@@ -50,11 +48,9 @@ git --version
 
     * In your terminal (or Git Bash on Windows), run:
 
-```bash
-git clone <your-fork-url>
-
-```
-
+    ```bash
+    git clone <your-fork-url>
+    ```
 
     * This creates a local copy of your forked repository that you can work in.
 
