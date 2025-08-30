@@ -17,7 +17,7 @@ plan:
       - title: Testing
         statement: markdowns/06 - testing.md
       - title: Submit Your Exercise
-        statement: markdowns/08 - submit your exercise.md
+        statement: markdowns/07 - submit your exercise.md
       - title: Congratulations
         statement: markdowns/08 - wrap up.md
 
