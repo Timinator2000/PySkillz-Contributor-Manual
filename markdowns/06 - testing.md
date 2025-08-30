@@ -16,11 +16,9 @@ Since your GitHub branch isn’t linked to the playground yet, you can only test
 
   * Formatting is slightly adjusted for terminal display, but the __content is identical__.
 
-__Channels: Terminal vs Tech.io__
+# Channels: Terminal vs Tech.io
 
-* In the __playground__, Tech.io organizes output into neat, separate channels: Success, Bug, Suggested Solution, and Standard Output.
-
-* Locally, these channels are __simulated in the terminal__ by prefixing each line with the channel name and a symbol (e.g., `Win🎉>`, `Bug🐞>`, `Sol✅>`, `StdOut>`).
+In the __playground__, Tech.io organizes output into neat, separate channels: Success, Bug, Suggested Solution, and Standard Output. Locally, these channels are __simulated in the terminal__ by prefixing each line with the channel name and a symbol (e.g., `Win🎉>`, `Bug🐞>`, `Sol✅>`, `StdOut>`).
 
 ```text
 Win🎉> Success Channel on Tech.io.
@@ -29,9 +27,9 @@ Sol✅> Suggested Solution Channel on Tech.io.
 StdOut> Standard Output Channel on Tech.io
 ```
 
-* This ensures that the __same information is visible locally__, even if the formatting isn’t as polished as Tech.io.
+This ensures that the __same information is visible locally__, even if the formatting isn’t as polished as Tech.io.
 
-* Any debug output sent to `sys.stderr` will follow your terminal’s default behavior locally, while Tech.io captures it in a dedicated __Standard Error__ panel.
+Any debug output sent to `sys.stderr` will follow your terminal’s default behavior locally, while Tech.io captures it in a dedicated __Standard Error__ panel.
 
 <BR>
 
