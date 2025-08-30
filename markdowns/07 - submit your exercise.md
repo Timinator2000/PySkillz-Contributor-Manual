@@ -78,9 +78,9 @@ _(Replace `master` with your branch name if you are using a feature branch.)_
 
 1. In the description, include:
 
-  * Skill topic and skill group for placement.
+    * Skill topic and skill group for placement.
 
-  * Any notes about random test cases or special instructions for reviewers.
+     * Any notes about random test cases or special instructions for reviewers.
 
 1. Submit the pull request.
 
