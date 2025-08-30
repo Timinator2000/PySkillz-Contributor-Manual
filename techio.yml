@@ -16,8 +16,10 @@ plan:
         statement: markdowns/05 - the python files.md
       - title: Testing
         statement: markdowns/06 - testing.md
+      - title: Submit Your Exercise
+        statement: markdowns/08 - submit your exercise.md
       - title: Congratulations
-        statement: markdowns/07 - wrap up.md
+        statement: markdowns/08 - wrap up.md
 
 
 # projects:
