@@ -6,13 +6,13 @@ Now that you’ve cloned the repository, let’s take a tour of the main folders
 📁 graphics
 ```
 
-You’ll see images and media files in this folder that support the playground overall. You won’t need to use these files. If you’d like to include graphics with one of your exercises, just add them to your own exercise folder instead.
+You’ll see images and media files in this folder that support the playground overall. __You won’t need to use these files.__ If you’d like to include graphics with one of your exercises, just add them to your own exercise folder instead.
 
 ```text
 📂 markdowns
 ```
 
-* This folder contains the markdown files that group and display exercises to the user. You should not modify these files. The PySkillz team will place your new exercise in the correct location based on the recommendations you provide..
+* This folder contains the markdown files that group and display exercises to the user. __You should not modify these files.__ The PySkillz team will place your new exercise in the correct location based on the recommendations you provide.
 
 * Organized by __skill topic__ (e.g., loops, functions, data structures).
 

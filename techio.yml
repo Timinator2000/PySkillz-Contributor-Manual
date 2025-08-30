@@ -10,10 +10,12 @@ plan:
         statement: markdowns/02 - project structure.md
       - title: Creating a New Exercise
         statement: markdowns/03 - create a new exercise.md
-      - title: File Contents
-        statement: markdowns/04 - file contents.md
+      - title: Define Your Exercise
+        statement: markdowns/04 - the markdown file.md
+      - title: Code Your Exercise
+        statement: markdowns/05 - the python files.md
       - title: Testing
-        statement: markdowns/05 - testing.md
+        statement: markdowns/06 - testing.md
       - title: Exercise Placement
         statement: markdowns/10 - exercise placement.md
 
