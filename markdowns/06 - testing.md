@@ -1,18 +1,22 @@
 # Testing Your New Exercise
 
-Since your GitHub branch isn’t linked to a playground, you’ll need to test your code locally. The directory structure shown below applies to step one.
+Since your GitHub branch isn’t linked to the playground yet, you can only test your code locally using this simple two-step process.
 
-📂 python-project<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;📂 tools<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🗋 timinator_tools.py<BR>
+* Write the solution as a learner would
 
-1. Go to the `tools` directory and set RUNNING_ON_TECH_IO to False inside `timinator_tools.py`.
+  * Code a solution in `exercise_name.py` just as a playground user would.
 
-2. Code a solution in `exercise_name.py` just as a playground user would. Be sure to save your changes.
+  * Be sure to __save your changes__ before running tests.
 
-3. Run `exercise_name_test.py`.
+* Run the exercise tests
 
-When the exercise runs, you’ll see the same output that users see in the playground. The formatting is adjusted for terminal display, but the content is identical. On Tech.io, all output is sent to a “channel,” which Tech.io neatly organizes and presents. In your terminal, channels are shown on each output line, like this:
+  * Run `exercise_name_test.py` in your terminal.
+
+  * When the exercise runs, you’ll see the __same output that users see in the playground__.
+
+  * Formatting is slightly adjusted for terminal display, but the __content is identical__.
+
+Example terminal output:
 
 ```text
 Win🎉> Success Channel on Tech.io.
@@ -21,7 +25,15 @@ Sol✅> Suggested Solution Channel on Tech.io.
 StdOut> Standard Output Channel on Tech.io
 ```
 
-Users of the playground are encouraged to print debug output to `sys.stderr`. On Tech.io, any output sent to `sys.stderr` is captured in a dedicated "Standard Error" panel. When testing locally, this output will follow your development environment's default behavior.
+__Channels: Terminal vs Tech.io__
+
+* In the __playground__, Tech.io organizes output into neat, separate channels: Success, Bug, Suggested Solution, and Standard Output.
+
+* Locally, these channels are __simulated in the terminal__ by prefixing each line with the channel name and a symbol (e.g., `Win🎉>`, `Bug🐞>`, `Sol✅>`, `StdOut>`).
+
+* This ensures that the __same information is visible locally__, even if the formatting isn’t as polished as Tech.io.
+
+* Any debug output sent to `sys.stderr` will follow your terminal’s default behavior locally, while Tech.io captures it in a dedicated __Standard Error__ panel.
 
 <BR>
 
