@@ -2,13 +2,9 @@ title: PySkillz Contributor Manual
 cover: graphics/PySkillzLogo.png
 
 plan:
-  - title: Welcome
-    plan:
-      - title: Introduction
-        statement: markdowns/welcome.md
   - title: Making Contributions to PySkillz
     plan:
-      - title: Making Contributions
+      - title: Getting Started
         statement: markdowns/01 - getting started.md
       - title: Project Structure
         statement: markdowns/02 - project structure.md

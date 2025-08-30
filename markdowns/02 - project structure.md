@@ -1,18 +1,18 @@
 # Step 2: Explore the Project Structure
 
-Now that you’ve cloned the repository, let’s take a tour of the main folders and files you’ll be working with:
+Now that you’ve cloned the repository, let’s take a tour of the main folders and files you see:
 
 ```text
 📁 graphics
 ```
 
-This folder contains images and other media used in exercises or documentation.
+You’ll see images and media files in this folder that support the playground overall. You won’t need to use these files. If you’d like to include graphics with one of your exercises, just add them to your own exercise folder instead.
 
 ```text
 📂 markdowns
 ```
 
-* This is where the written instructions for exercises live.
+* This folder contains the markdown files that group and display exercises to the user. You should not modify these files. The PySkillz team will place your new exercise in the correct location based on the recommendations you provide..
 
 * Organized by __skill topic__ (e.g., loops, functions, data structures).
 

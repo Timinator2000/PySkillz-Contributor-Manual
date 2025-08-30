@@ -10,9 +10,9 @@ Here’s what we’ll cover:
 
 1. The recommended GitHub workflow — how to fork, branch, commit, and submit pull requests.
 
-2. The files needed to create an exercise — understanding the structure of a PySkillz exercise.
+2. The files needed to create an exercise — understanding the overall project structure and the structure of a PySkillz exercise.
 
-3. The details that go into the exercise itself — writing clear instructions, solutions, and explanations.
+3. The details that go into the exercise itself — writing clear instructions, test cases, solutions, and explanations.
 
 Ready to make your first contribution? Let’s dive in 🚀
 
@@ -38,13 +38,15 @@ Before you can contribute to PySkillz, you’ll need your own copy of the reposi
 
     * If Git is not installed, download it from [git-scm.com](https://git-scm.com/) and follow the installation instructions for your operating system.
 
-    * 💡 Tip: When you install Git on Windows, you’ll also get Git Bash—a lightweight terminal that makes running Git commands easier. We recommend using Git Bash for this guide.
+    * 💡 Tip: If you install Git on Windows, you’ll also get Git Bash—a lightweight terminal that makes running Git commands easier. This guide was written while using Git Bash.
 
 3. Clone your fork to your local machine
 
     * Navigate to your new fork on GitHub.
 
     * Click the green Code button and copy the HTTPS URL.
+
+    * Determine where you want your local copy to exist in your local file structure. In your terminal, navigate to that location.
 
     * In your terminal (or Git Bash on Windows), run:
 
