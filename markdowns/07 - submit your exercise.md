@@ -13,14 +13,17 @@ git fetch upstream
 git log --oneline master..upstream/master
 ```
 
-* If commits are listed, your fork is out-of-date and needs syncing.
+* If this shows commits, then your fork is behind.
+
+* If it shows nothing, you’re already up-to-date.
+
 
 ## Sync your fork (if needed)
 
 * Add the main PySkillz repo as an upstream remote (if not already added):
 
 ```bash
-git remote add upstream https://github.com/Timinator2000/PySkillz/PySkillz.git
+git remote add upstream https://github.com/Timinator2000/PySkillz.git
 ```
 
 * Fetch the latest changes from upstream:
@@ -85,6 +88,6 @@ _(Replace `master` with your branch name if you are using a feature branch.)_
 
 * The PySkillz team will review your PR, provide feedback if needed, and merge it into the main repository.
 
-* Once merged, your exercise becomes live in the playground for learners!
+* Once merged, 🎉 your exercise becomes live in the playground for learners!
 
 >💡 Tip: Always double-check your folder and file names before committing. GitHub is case-sensitive, and the playground relies on the exact naming conventions.
