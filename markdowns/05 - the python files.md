@@ -1,10 +1,23 @@
-# Template Files
+# Step 5: The Python Files
 
+To create a new exercise, three Python files need your attention:
 
+* `exercise_name.py`
+  * The __starter code__ presented to the learner.
+  * Learners will edit this file to solve the exercise.
 
-<BR>
+* `exercise_name_solution.py`
+  * Your __working solution__ to the exercise.
+    * The grader uses this file to determine the expected output.
+    * After the learner successfully completes the exercise, this entire file is displayed as the suggested solution.
+  
+* `exercise_name_test.py`
+  * The __exercise subclass__ that defines the specifics of this exercise, including:
+    *  Static test cases for validation.
+    *  The algorithm used to generate any random test cases.
+    *  A success message displayed after the learner completes the exercise.
 
-Let’s take a look at the contents of each file so we can pinpoint exactly what needs to be changed to get your new exercise up and running.
+Let’s now take a closer look at the contents of each file so you know __exactly what to edit__ to get your new exercise up and running.
 
 # exercise_name.py
 

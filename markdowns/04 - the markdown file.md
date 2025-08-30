@@ -1,106 +1,47 @@
-# Step 3: Start a New Exercise with the Template
+# Step 4: Write the Exercise Instructions (.md file)
 
-Creating a new exercise from scratch is quick and easy thanks to the exercise template provided in the python-project folder. This template gives you a ready-made shell that includes all the required files.
+Each exercise starts with a __Markdown file__ (`.md`) that serves as the __instructions page learners see__ when they see the exercise in the playground. Think of this file as your opportunity to guide learners: explain the problem, set expectations, and provide any helpful examples or hints.
 
-```text
-📂 python-project
-    📂 ----new_exercises----
-        📂 ----exercise_template----
-            🗋 exercise_name.md
-            🗋 exercise_name.py
-            🗋 exercise_name_solution.py
-            🗋 exercise_name_test.py
-```
+# Required Header for PySkillz Team__
 
-To create your own exercise:
+At the very top of your `.md` file, include a short note for the PySkillz team so we know __where you’d like this exercise to appear in the playground.__ This should specify:
 
-1. Make a __full copy__ of the ----exercise_template---- folder inside the ----new_exercises---- folder.
+* __Skill topic__ – the __name of the markdown folder__ (e.g., `05 - loops`)
 
-2. Rename the copied folder and all of its files to match the name of your new exercise.
+* __Skill group__ – the __name of the exercise group file__ (without the `.md` extension, e.g., `loops-basic`)
 
-    * ✅ Use __underscores instead of spaces__ in file and folder names.
+* __Explanation of your choice (optional)__ - you may also include a short note explaining why you chose this topic and group. For example, you might write that the exercise builds on a previous concept, fits a specific skill level, or complements other exercises in the group.
 
-    * ✅ Keep file endings (`_solution.py`, `_test.py`) intact.
+Regarding skill topic and skill group, this could be:
 
-Your structure should now look something like this:
+* an __existing skill group__ inside an existing topic,
 
-```
-📂 python-project
-    📂 ----new_exercises----
-        📂 ----exercise_template----
-            🗋 exercise_name.md
-            🗋 exercise_name.py
-            🗋 exercise_name_solution.py
-            🗋 exercise_name_test.py
-        📂 my_new_exercise
-            🗋 my_new_exercise.md
-            🗋 my_new_exercise.py
-            🗋 my_new_exercise_solution.py
-            🗋 my_new_exercise_test.py
-```
+* a __new skill group__ inside an existing topic, or
 
-With the folder and filenames in place, your exercise shell is ready. Now it’s time to start filling in the files to bring your exercise to life.
+* a __completely new topic and group__.
 
-# Step 4
+👉 This section is only for the PySkillz team and won’t be shown to learners in the playground.
 
+# Exercise Instructions
 
+A good `.md` file typically includes:
 
+* Title – The name of the exercise (should match the folder/file name).
 
-# THIS CAN PROBABLY ALL GO AWAY
+* Problem statement – A clear, concise description of the task.
 
-To create a new exercise, three files must be placed together in the folder you created above:
+* Input/Output expectations – What kind of data the learner’s code will receive, and what it should return or print.
 
-* `exercise_name.py`
-  * The code block presented to the end-user to solve.
+* Example – One concrete examples of valid input/output.
 
-* `exercise_name_solution.py`
-  * Your working solution to the exercise.
-    * The grader uses this file to determine the expected output.
-    * After the end-user successfully completes the exercise, this entire file is displayed as the suggested solution.
-  
-* `exercise_name_test.py`
-  * The exercise subclass that defines the specifics of this exercise, including:
-    *  Static test cases for validation.
-    *  The algorithm used to generate random test cases.
-    *  A success message display after the end-user completes the exercise.
+* Hints or tips (optional) – Only if needed; try not to give away the full solution.
 
-<BR>
+### Best Practices  
+* ✅ Keep it __short and to the point__.  
+* ✅ Use __code blocks__ for clarity.  
+* ✅ __MOST IMPORTANTLY__, be consistent – follow the same format as other exercises in the playground.
 
-These three files must be placed inside a folder named after the exercise itself. __Naming conventions are critical__ — the exercise architecture relies on these conventions to correctly locate the files it needs in order to execute successfully.
-
-        📂 exercise_name<BR>
-            🗋 exercise_name.py<BR>
-            🗋 exercise_name_solution.py<BR>
-            🗋 exercise_name_test.py<BR>
-
-<BR>
-
-Consider the “Hello, World!” example. Following the steps above, the folder and file structure looks like this:
-
-        📂 hello_world<BR>
-            🗋 hello_world.py<BR>
-            🗋 hello_world_solution.py<BR>
-            🗋 hello_world_test.py<BR>
-<BR>
-
-Finally, the `exercise_name` folder must be placed inside an __exercise group__ folder. A exercise group is a collection of exercises that are displayed together on a single markdown page.
-
-For example, consider the [PySkillz Welcome](welcome) page. This page introduces the two types of exercises — print-based exercises and exercises that return an answer. Both of these exercises are grouped into an exercise group called `welcome`.
-
-The resulting structure looks like this:
-
-📂 python-project<BR>
-    📂 welcome<BR>
-        📂 hello_world<BR>
-            🗋 hello_world.py<BR>
-            🗋 hello_world_solution.py<BR>
-            🗋 hello_world_test.py<BR>
-        📂 add_two_numbers<BR>
-            🗋 add_two_numbers.py<BR>
-            🗋 add_two_numbers_solution.py<BR>
-            🗋 add_two_numbers_test.py<BR>
-
-On the next page, we'll explore the details of each of the three Python files that make up an exercise.
+Once your `.md` file is ready, you’ve given learners everything they need to understand the challenge. Next, you’ll move on to the python files.  
 
 <BR>
 
