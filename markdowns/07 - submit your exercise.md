@@ -2,6 +2,50 @@
 
 Once your new exercise is complete and tested locally, the final step is to __push your changes to your fork on GitHub__ and open a __pull request__ to the main PySkillz repository.
 
+## Check if your fork is up-to-date
+
+* On GitHub: Look for a message indicating your branch is behind the main repository.
+
+* Locally:
+
+```bash
+git fetch upstream
+git log --oneline master..upstream/master
+```
+
+* If commits are listed, your fork is out-of-date and needs syncing.
+
+## Sync your fork (if needed)
+
+* Add the main PySkillz repo as an upstream remote (if not already added):
+
+```bash
+git remote add upstream https://github.com/Timinator2000/PySkillz/PySkillz.git
+```
+
+* Fetch the latest changes from upstream:
+
+```bash
+git fetch upstream
+```
+
+* Merge changes into your local `master` branch:
+
+```bash
+git checkout master
+git merge upstream/master
+```
+
+* Resolve any merge conflicts if prompted.
+
+* Push your updated `master` branch to your fork:
+
+```bash
+git push origin master
+```
+
+>💡Tip: Always sync your fork before starting a new exercise to minimize conflicts.
+
 ## Add and commit your changes
 
 From the root of your local fork, use Git to stage and commit your new exercise:
@@ -25,22 +69,22 @@ _(Replace `master` with your branch name if you are using a feature branch.)_
 
 1. Click __Compare & pull request__.
 
-1. Make sure the __base repository__ is the main PySkillz repository and the base branch is master.
+1. Make sure the __base repository__ is the main PySkillz repository and the base branch is `master`.
 
-Give your PR a clear title, e.g., "Add new exercise: my_new_exercise".
+1. Give your PR a clear title, e.g., `"Add new exercise: my_new_exercise"`.
 
-In the description, include:
+1. In the description, include:
 
-Skill topic and skill group for placement.
+  * Skill topic and skill group for placement.
 
-Any notes about random test cases or special instructions for reviewers.
+  * Any notes about random test cases or special instructions for reviewers.
 
-Submit the pull request.
+1. Submit the pull request.
 
-4. Review and Merge
+## Review and Merge
 
-The PySkillz team will review your PR, provide feedback if needed, and merge it into the main repository.
+* The PySkillz team will review your PR, provide feedback if needed, and merge it into the main repository.
 
-Once merged, your exercise becomes live in the playground for learners!
+* Once merged, your exercise becomes live in the playground for learners!
 
-💡 Tip: Always double-check your folder and file names before committing. GitHub is case-sensitive, and the playground relies on the exact naming conventions.
+>💡 Tip: Always double-check your folder and file names before committing. GitHub is case-sensitive, and the playground relies on the exact naming conventions.
