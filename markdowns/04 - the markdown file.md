@@ -1,4 +1,4 @@
-# Step 4: Write the Exercise Instructions (.md file)
+# Step 4: Write the Exercise Instructions (`.md` file)
 
 Each exercise starts with a __Markdown file__ (`.md`) that serves as the __instructions page learners see__ when they see the exercise in the playground. Think of this file as your opportunity to guide learners: explain the problem, set expectations, and provide any helpful examples or hints.
 
