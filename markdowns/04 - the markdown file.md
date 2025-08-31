@@ -2,7 +2,7 @@
 
 Each exercise starts with a __Markdown file__ (`.md`) that serves as the __instructions page learners see__ when they see the exercise in the playground. Think of this file as your opportunity to guide learners: explain the problem, set expectations, and provide any helpful examples or hints.
 
-# Required Header for PySkillz Team__
+# Required Header for PySkillz Team
 
 At the very top of your `.md` file, include a short note for the PySkillz team so we know __where you’d like this exercise to appear in the playground.__ This should specify:
 
@@ -36,9 +36,12 @@ A good `.md` file typically includes:
 
 * Hints or tips (optional) – Only if needed; try not to give away the full solution.
 
-### Best Practices  
+## Best Practices
+
 * ✅ Keep it __short and to the point__.  
+
 * ✅ Use __code blocks__ for clarity.  
+
 * ✅ __MOST IMPORTANTLY__, be consistent – follow the same format as other exercises in the playground.
 
 Once your `.md` file is ready, you’ve given learners everything they need to understand the challenge. Next, you’ll move on to the python files.  
