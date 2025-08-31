@@ -7,24 +7,22 @@ plan:
       - title: Getting Started
         statement: markdowns/01 - getting started.md
       - title: Project Structure
-        statement: markdowns/02 - project structure.md
+        statement: markdowns/02 - local setup.md
       - title: Creating a New Exercise
-        statement: markdowns/03 - create a new exercise.md
+        statement: markdowns/03 - project structure.md
+      - title: Creating a New Exercise
+        statement: markdowns/04 - create a new exercise.md
       - title: Define Your Exercise
-        statement: markdowns/04 - the markdown file.md
+        statement: markdowns/05 - the markdown file.md
       - title: Code Your Exercise
-        statement: markdowns/05 - the python files.md
+        statement: markdowns/06 - the python files.md
       - title: Testing
-        statement: markdowns/06 - testing.md
+        statement: markdowns/07 - testing.md
       - title: Submit Your Exercise
-        statement: markdowns/07 - submit your exercise.md
+        statement: markdowns/08 - submit your exercise.md
       - title: Congratulations
-        statement: markdowns/08 - wrap up.md
-
-
-# projects:
-#   python:
-#     root: /python-project
-#     runner:
-#       name: python
-#       version: '3'
+        statement: markdowns/09 - wrap up.md
+  - title: Notes
+    plan:
+      - title: Issues to Resolve
+        statement: markdowns/20 - notes.md
