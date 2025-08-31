@@ -6,9 +6,9 @@ plan:
     plan:
       - title: Getting Started
         statement: markdowns/01 - getting started.md
-      - title: Project Structure
+      - title: Set Up Your Local Workspace
         statement: markdowns/02 - local setup.md
-      - title: Creating a New Exercise
+      - title: Project Structure
         statement: markdowns/03 - project structure.md
       - title: Creating a New Exercise
         statement: markdowns/04 - create a new exercise.md
@@ -24,5 +24,5 @@ plan:
         statement: markdowns/09 - wrap up.md
   - title: Notes
     plan:
-      - title: Issues to Resolve
+      - title: Notes for Contributors
         statement: markdowns/20 - notes.md
