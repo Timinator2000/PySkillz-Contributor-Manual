@@ -1,4 +1,4 @@
-# Testing Your New Exercise
+# Step 6: Testing Your New Exercise
 
 Since your GitHub branch isn’t linked to the playground yet, you can only test your code locally using this simple two-step process.
 

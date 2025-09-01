@@ -121,9 +121,9 @@ class ExerciseName(timinator_tools.Exercise):
 class ExerciseName(timinator_tools.PrintBasedExercise):
 ```
 
-The first two lines of the class `__init__` constructor must remain unchanged. They call the superclass constructor and initialize the success message you defined earlier.
+The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing in the user solution, the suggested solution and the success message.
 
-On the third line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
+On the second line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
 
 Next, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or less. Insert arguments into each test case placeholder.
 
@@ -136,8 +136,7 @@ Remember: every test case must be a list of arguments, even if there is only one
 ```python
     def __init__(self):
 
-        super().__init__(user_solution, suggested_solution, solution_filename)
-        self.success_message = success_message
+        super().__init__(user_solution, suggested_solution, solution_filename, success_message)
         self.num_random_test_cases = 100
 
         self.fixed_test_cases = [
