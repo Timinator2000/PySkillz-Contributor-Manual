@@ -23,14 +23,14 @@ Let’s now take a closer look at the contents of each file so you know __exactl
 
 The contents of this file are shown to the user in the code window. Keep it very short.
 
-For exercises that have input parameters and return values (`timinator_tools.Exercise`), provide only a minimal function stub.
+For exercises that have input parameters and return values (`pyskillz_tools.Exercise`), provide only a minimal function stub.
 
 ```python
 def exercise_name(a: int, b: int) -> int:
     return # Your code goes here.
 ```
 
-For exercises that take input and require the user to print an answer (`timinator_tools.PrintBasedExercise`), include a few extra comment lines.
+For exercises that take input and require the user to print an answer (`pyskillz_tools.PrintBasedExercise`), include a few extra comment lines.
 Since all `print` output is graded, remind users they can use `sys.stderr` for debug messages.
 
 ```python
@@ -46,14 +46,14 @@ def exercise_name(a: int, b: int) -> None:
 
 This file contains the suggested solution along with any alternates. The primary solution is used by the grader to check correctness. Once the user completes the exercise successfully, the full contents of this file are displayed.
 
-For `timinator_tools.Exercise`:
+For `pyskillz_tools.Exercise`:
 
 ```python
 def exercise_name(a: int, b: int) -> int:
     return a + b
 ```
 
-For `timinator_tools.PrintBasedExercise`:
+For `pyskillz_tools.PrintBasedExercise`:
 
 ```python
 def exercise_name(a: int, b: int) -> None:
@@ -64,7 +64,7 @@ def exercise_name(a: int, b: int) -> None:
 
 This file contains the main exercise logic. Define your exercise subclass, create an instance of it, and run the exercise.
 
-The first section is reserved for setup and __must not be modified__. It imports the exercise framework from `timinator_tools.py`, the user’s solution from `exercise_name.py`, and the suggested solution from `exercise_name_solution.py`.
+The first section is reserved for setup and __must not be modified__. It imports the exercise framework from `pyskillz_tools.py`, the user’s solution from `exercise_name.py`, and the suggested solution from `exercise_name_solution.py`.
 
 ```python
 ###############################################################################################################
@@ -82,11 +82,11 @@ dir_path, filename = os.path.split(os.path.normpath(__file__))
 sys.path.insert(0, os.path.join(dir_path, '..', '..', '----tools----'))
 
 try:
-    import timinator_tools
-    timinator_tools.check_for_tech_io(dir_path)
+    import pyskillz_tools
+    pyskillz_tools.check_for_tech_io(dir_path)
 
 except ImportError:
-    print(f'Import Error: timinator_tools.py needs to be in the tools folder, one level deep from python-project.')
+    print(f'Import Error: pyskillz_tools.py needs to be in the tools folder, one level deep from python-project.')
 
 exercise_name = filename[:filename.find('_test.py')]
 solution_filename = os.path.join(dir_path, f'{exercise_name}_solution.py')
@@ -117,8 +117,8 @@ success_message += ''
 Next, declare your exercise class by choosing one of the following lines. Each option specifies the exercise type your class will inherit from. Be sure to replace `ExerciseName` with the actual name of your exercise, matching the `exercise_name` wording used for your files.
 
 ```python
-class ExerciseName(timinator_tools.Exercise):
-class ExerciseName(timinator_tools.PrintBasedExercise):
+class ExerciseName(pyskillz_tools.Exercise):
+class ExerciseName(pyskillz_tools.PrintBasedExercise):
 ```
 
 The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing in the user solution, the suggested solution and the success message.
