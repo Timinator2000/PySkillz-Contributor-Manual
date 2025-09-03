@@ -95,7 +95,7 @@ In the repository, you’ll see many more files, and the file names will reflect
 ```
 📁 graphics
 
-📂 markdowns<BR>
+📂 markdowns
     📂 skill topic
         📄 exercise group.md
         📄 exercise group 2.md
