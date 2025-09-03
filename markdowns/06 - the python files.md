@@ -121,7 +121,7 @@ class ExerciseName(pyskillz_tools.Exercise):
 class ExerciseName(pyskillz_tools.PrintBasedExercise):
 ```
 
-The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing in the user solution, the suggested solution and the success message.
+The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing in the user solution, the suggested solution, the suggested solution filename and the success message.
 
 On the second line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
 

@@ -12,7 +12,7 @@ You’ll see images and media files in this folder that support the playground o
 📂 markdowns
 ```
 
-* This folder contains the markdown files that group and display exercises to the user. __You should not modify these files.__ The PySkillz team will place your new exercise in the correct location based on the recommendations you provide.
+* This folder contains the markdown files that group and display exercises to the user. __You should not modify these files.__ The PySkillz team will place your new exercise in the best location based on the recommendations you provide.
 
 * Organized by __skill topic__ (e.g., loops, functions, data structures).
 
@@ -70,7 +70,7 @@ __What this does__
 
 * Python automatically creates `__pycache__` folders to store compiled bytecode (`.pyc` files).
 
-* These files are __generated automatically by Python__ not by your editor or IDE.
+* These files are __generated automatically by Python__, not by your editor or IDE.
 
 * Ignoring them keeps commits cleaner and avoids potential conflicts between different systems or Python versions.
 
