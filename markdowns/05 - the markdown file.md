@@ -32,7 +32,7 @@ A good `.md` file typically includes:
 
 * Input/Output expectations – What kind of data the learner’s code will receive, and what it should return or print.
 
-* Example – One concrete examples of valid input/output.
+* Example – One concrete example of valid input/output.
 
 * Hints or tips (optional) – Only if needed; try not to give away the full solution.
 
@@ -44,7 +44,7 @@ A good `.md` file typically includes:
 
 * ✅ __MOST IMPORTANTLY__, be consistent – follow the same format as other exercises in the playground.
 
-Once your `.md` file is ready, you’ve given learners everything they need to understand the challenge. Next, you’ll move on to the python files.  
+Once your `.md` file is ready, you’ve given learners everything they need to understand the challenge. Next, you’ll move on to the Python files.  
 
 <BR>
 

@@ -6,15 +6,15 @@ Creating a new exercise from scratch is quick and easy thanks to the exercise te
 📂 python-project
     📂 ----new_exercises----
         📂 ----exercise_template----
-            🗋 exercise_name.md
-            🗋 exercise_name.py
-            🗋 exercise_name_solution.py
-            🗋 exercise_name_test.py
+            📄 exercise_name.md
+            📄 exercise_name.py
+            📄 exercise_name_solution.py
+            📄 exercise_name_test.py
 ```
 
 To create your own exercise:
 
-1. Make a __full copy__ of the ----exercise_template---- folder inside the ----new_exercises---- folder.
+1. Make a __full copy__ of the `----exercise_template----` folder inside the `----new_exercises----` folder.
 
 2. Rename the copied folder and all of its files to match the name of your new exercise.
 
@@ -28,15 +28,15 @@ Your structure should now look something like this:
 📂 python-project
     📂 ----new_exercises----
         📂 ----exercise_template----
-            🗋 exercise_name.md
-            🗋 exercise_name.py
-            🗋 exercise_name_solution.py
-            🗋 exercise_name_test.py
+            📄 exercise_name.md
+            📄 exercise_name.py
+            📄 exercise_name_solution.py
+            📄 exercise_name_test.py
         📂 my_new_exercise
-            🗋 my_new_exercise.md
-            🗋 my_new_exercise.py
-            🗋 my_new_exercise_solution.py
-            🗋 my_new_exercise_test.py
+            📄 my_new_exercise.md
+            📄 my_new_exercise.py
+            📄 my_new_exercise_solution.py
+            📄 my_new_exercise_test.py
 ```
 
 With the folder and filenames in place, your exercise shell is ready. Now it’s time to start filling in the files to bring your exercise to life.

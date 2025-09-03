@@ -37,13 +37,13 @@ This is where the actual Python code for each exercise lives.
   * `exercise_name_test.py` → The __exercise subclass__ that defines test cases, a success message and a few other exercise components.
 
 ```text
-🗋 .gitignore
+📄 .gitignore
 ```
 
 Specifies which files/folders Git should ignore (temporary files, caches, etc.).
 
 ```text
-🗋 techio.yml ⚠️
+📄 techio.yml
 ```
 
 Configuration file used by the Tech.io platform to control the layout of the PySkillz playground.
@@ -97,35 +97,35 @@ In the repository, you’ll see many more files, and the file names will reflect
 
 📂 markdowns<BR>
     📂 skill topic
-        🗋 exercise group.md
-        🗋 exercise group 2.md
+        📄 exercise group.md
+        📄 exercise group 2.md
     📂 skill topic 2
-        🗋 exercise group 3.md
-        🗋 exercise group 4.md
+        📄 exercise group 3.md
+        📄 exercise group 4.md
 
 📂 python-project
     📂 exercise group
         📂 exercise_name
-            🗋 exercise_name.py
-            🗋 exercise_name_solution.py
-            🗋 exercise_name_test.py
+            📄 exercise_name.py
+            📄 exercise_name_solution.py
+            📄 exercise_name_test.py
         📂 exercise_name_2
-            🗋 exercise_name_2.py
-            🗋 exercise_name_2_solution.py
-            🗋 exercise_name_2_test.py
+            📄 exercise_name_2.py
+            📄 exercise_name_2_solution.py
+            📄 exercise_name_2_test.py
         📂 exercise_name_3
-            🗋 exercise_name_3.py
-            🗋 exercise_name_3_solution.py
-            🗋 exercise_name_3_test.py
+            📄 exercise_name_3.py
+            📄 exercise_name_3_solution.py
+            📄 exercise_name_3_test.py
     📂 exercise group 2
         📂 exercise_name_4
-            🗋 exercise_name_4.py
-            🗋 exercise_name_solution_4.py
-            🗋 exercise_name_test_4.py
+            📄 exercise_name_4.py
+            📄 exercise_name_solution_4.py
+            📄 exercise_name_test_4.py
 
-🗋 .gitignore
+📄 .gitignore
 
-🗋 techio.yml
+📄 techio.yml
 ```
 
 <BR>

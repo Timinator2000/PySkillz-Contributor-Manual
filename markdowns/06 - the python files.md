@@ -4,7 +4,6 @@ To create a new exercise, three Python files need your attention:
 
 * `exercise_name.py`
   * The __starter code__ presented to the learner.
-  * Learners will edit this file to solve the exercise.
 
 * `exercise_name_solution.py`
   * Your __working solution__ to the exercise.
@@ -44,7 +43,7 @@ def exercise_name(a: int, b: int) -> None:
 
 # exercise_name_solution.py
 
-This file contains the suggested solution along with any alternates. The primary solution is used by the grader to check correctness. Once the user completes the exercise successfully, the full contents of this file are displayed.
+This file contains the suggested solution along with any alternate soltuions. The primary solution is used by the grader to check correctness. Once the user completes the exercise successfully, the full contents of this file are displayed.
 
 For `pyskillz_tools.Exercise`:
 
@@ -125,7 +124,7 @@ The first line of the class constructor (`__init__` ) must remain unchanged. It 
 
 On the second line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
 
-Next, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or less. Insert arguments into each test case placeholder.
+Next, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or fewer. Insert arguments into each test case placeholder.
 
 Remember: every test case must be a list of arguments, even if there is only one. For example:
 

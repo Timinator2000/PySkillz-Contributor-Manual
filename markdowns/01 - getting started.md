@@ -2,7 +2,7 @@
 
 # Welcome to the PySkillz Contributor Guide 🎉
 
-We’re thrilled you’re here! By contributing to PySkillz, you’re helping us build the most comprehensive collection of skill-building exercises for new Python programmers on the Internet. Your contributions are not only valuable to learners worldwide, but also a great way to sharpen your own skills and experience with open source collaboration.
+We’re thrilled you’re here! By contributing to [PySkillz](skillz-catalog) __LINK NEEDED__, you’re helping us build the most comprehensive collection of skill-building exercises for new Python programmers on the Internet. Your contributions are not only valuable to learners worldwide, but also a great way to sharpen your own skills and experience with open source collaboration.
 
 This guide will walk you step by step through the contribution process. By the end, you’ll know exactly how to get your work included in the PySkillz repository.
 
@@ -21,3 +21,7 @@ Ready to make your first contribution? Let’s dive in 🚀
 ************
 
 [![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+
+|:-------:|
+| <span style="font-size: 100%"><b>_Click the python at the bottom of any page to jump directly to the main PySkillz playground._</b></span>|
+

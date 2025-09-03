@@ -2,7 +2,7 @@
 
 You’ve completed the process of creating, testing, and submitting a new PySkillz exercise! 🎉
 
-By following the steps in this manual, you’ve:
+By following the steps in this guide, you’ve:
 
 * Set up your GitHub fork and cloned it locally.
 
