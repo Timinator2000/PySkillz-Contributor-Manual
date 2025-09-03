@@ -1,6 +1,6 @@
 # Step 6: Testing Your New Exercise
 
-Since your GitHub branch isn’t linked to the playground yet, you can only test your code locally using this simple two-step process.
+Because your GitHub branch isn’t connected to a playground like the main PySkillz branch, it can only be tested online after it’s merged into the repository. Until then, you can test your code locally by following this two-step process.
 
 * Write the solution as a learner would
 
