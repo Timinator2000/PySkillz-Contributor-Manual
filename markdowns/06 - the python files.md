@@ -152,7 +152,7 @@ You must override the `test_case_to_string` method to format a test case for pri
 ```python
     def test_case_to_string(self, test_case) -> str:
         a, b = test_case
-        return f'a = {a}' + '\n' + f'b = {b}'
+        return f'{a = }\n{b = }'
 ```
 
 You have plenty of flexibility in how you format a test case for output. Just keep in mind that the main goal is to make the output easy to read and understand.
