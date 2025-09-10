@@ -63,7 +63,7 @@ def exercise_name(a: int, b: int) -> None:
 
 This file contains the main exercise logic. Define your exercise subclass, create an instance of it, and run the exercise.
 
-The first section is reserved for setup and __must not be modified__. It imports the exercise framework from `pyskillz_tools.py`, the user’s solution from `exercise_name.py`, and the suggested solution from `exercise_name_solution.py`.
+The first section is reserved for setup and __must not be modified__. It imports the exercise framework from `pyskillz_tools.py`.
 
 ```python
 ###############################################################################################################
@@ -74,24 +74,17 @@ import os
 import sys
 import random
 
-# Normalize path for current OS and split the path into directory and filename
-dir_path, filename = os.path.split(os.path.normpath(__file__))
+# Normalize path for current OS. Split the path into directory and filename.
+dir_path, _ = os.path.split(os.path.normpath(__file__))
 
 # Add tools directory to the OS PATH
 sys.path.insert(0, os.path.join(dir_path, '..', '..', '----tools----'))
 
 try:
     import pyskillz_tools
-    pyskillz_tools.check_for_tech_io(dir_path)
 
 except ImportError:
-    print(f'Import Error: pyskillz_tools.py needs to be in the tools folder, one level deep from python-project.')
-
-exercise_name = filename[:filename.find('_test.py')]
-solution_filename = os.path.join(dir_path, f'{exercise_name}_solution.py')
-
-exec(f'from {exercise_name} import {exercise_name} as user_solution')
-exec(f'from {exercise_name}_solution import {exercise_name} as suggested_solution')
+    print(f'Import Error: pyskillz_tools.py needs to be in the “----tools----” folder, one level deep from python-project.')
 
 ###############################################################################################################
 # End Setup
@@ -120,11 +113,13 @@ class ExerciseName(pyskillz_tools.Exercise):
 class ExerciseName(pyskillz_tools.PrintBasedExercise):
 ```
 
-The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing in the user solution, the suggested solution, the suggested solution filename and the success message.
+The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing the full filename and the success message.
 
 On the second line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
 
-Next, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or fewer. Insert arguments into each test case placeholder.
+The next several lines are all optional constraints that can be added to an exercise. Each of these constraints is covered in more detail on the next page.
+
+Finally, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or fewer. Insert arguments into each test case placeholder.
 
 Remember: every test case must be a list of arguments, even if there is only one. For example:
 
@@ -135,8 +130,15 @@ Remember: every test case must be a list of arguments, even if there is only one
 ```python
     def __init__(self):
 
-        super().__init__(user_solution, suggested_solution, solution_filename, success_message)
+        super().__init__(__file__, success_message)
         self.num_random_test_cases = 100
+
+        # Exercise Constraints (Optional)
+        # self.max_statement_count =                 # Default is 10_000_000
+        # self.max_lines_of_code =                   # Default is 10_000_000
+
+        # Additional PrintBasedExercise Option
+        # self.strict_print_usage = True             # Default is False
 
         self.fixed_test_cases = [
             [],
@@ -164,6 +166,13 @@ Remember: every test case must be a list of arguments, even if a test case only 
 ```python
     def generate_random_test_case(self) -> list:
         return [random.randint(-100, 100), random.randint(-100, 100)]
+```
+
+If you want to provide more detailed solution criteria, you __may__ override the `additional_solution_criteria` method. On the next page, more detail is given as to when you might want to do this.
+
+```python
+    def additonal_solution_criteria(self) -> bool:
+        return True
 ```
 
 Finally, replace `ExerciseName` below with the name of your new exercise class.

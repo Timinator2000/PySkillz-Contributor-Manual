@@ -16,12 +16,14 @@ plan:
         statement: markdowns/05 - the markdown file.md
       - title: Code Your Exercise
         statement: markdowns/06 - the python files.md
+      - title: Optional Solution Criteria
+        statement: markdowns/07 - optional solution criteria.md
       - title: Testing
-        statement: markdowns/07 - testing.md
+        statement: markdowns/08 - testing.md
       - title: Submit Your Exercise
-        statement: markdowns/08 - submit your exercise.md
+        statement: markdowns/09 - submit your exercise.md
       - title: Congratulations
-        statement: markdowns/09 - wrap up.md
+        statement: markdowns/10 - wrap up.md
   - title: Notes
     plan:
       - title: Notes for Contributors
