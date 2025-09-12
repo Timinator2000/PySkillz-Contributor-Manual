@@ -8,7 +8,7 @@
 
 3) If code passes #2, check `lines_of_code` vs `max_lines_of_code`
 
-4) If code passes #3, check any additional grader criteria by calling `additonal_solution_criteria` method.
+4) If code passes #3, check any additional grader criteria by calling `check_additonal_solution_criteria` method.
 
 
 # The Options
@@ -17,7 +17,7 @@
 `max_statement_count`
 `max_lines_of_code`
 
-Additionally, you may add any criteria you wish by overriding the the `additonal_solution_criteria` method.
+Additionally, you may add any criteria you wish by overriding the the `check_additonal_solution_criteria` method.
 
 # Examples
 
@@ -39,7 +39,7 @@ def hello_word_3_times():
 Now, let's look at a bunch of different ways to code a solution. For each solution, I'll do an analysis and determine the number of calls to `print` when the code executes, the number of lines of code and the number of statements in the solution.
 
 
-# Overriding the `additonal_solution_criteria` Method
+# Overriding the `check_additonal_solution_criteria` Method
 
 Look at all the possible soltutions above. Let's say the exercise asked the user to use a `while` loop. All `Exercise`s are, ultimately, subclasses a `TechioObject`. A `TechioObject` object only exists after a learner clicks on **Run** in a graded code block. During the object instantiation, a code analysis is run on the learner's code and saved in `self.code_analysis`, a dictionary with the following important keys:
 
@@ -56,7 +56,7 @@ Look at all the possible soltutions above. Let's say the exercise asked the user
 | comment_lines | number of comment lines in the learner's code |
 | effective_code_lines | lines of code = `non_blank_lines - comment_lines' |
 
-You are free to use this information in any way to determine if the learner has met the exercise objectives. In the end, `additonal_solution_criteria` must return a string. An empty string indicates all additional criteria have been met. Any other string should be a message to be displayed to the learner explaining what additional criteria **has not** been met.
+You are free to use this information in any way to determine if the learner has met the exercise objectives. In the end, `check_additonal_solution_criteria` must return a string. An empty string indicates all additional criteria have been met. Any other string should be a message to be displayed to the learner explaining what additional criteria **has not** been met.
 
 For instance, if the the exercise above was written as:
 
@@ -66,7 +66,7 @@ For instance, if the the exercise above was written as:
 >Hello, World!
 >Hello, World!
 
-By overriding the `additonal_solution_criteria` as shown below, you can you check to make sure the leaner used a `while` loop as compared to a `for` loop or simply `str.join`? If you find a `while` loop, return an empty string. Otherwise, return a message that may be sent to the user explaining why the submitted solution has failed.
+By overriding the `check_additonal_solution_criteria` as shown below, you can you check to make sure the leaner used a `while` loop as compared to a `for` loop or simply `str.join`? If you find a `while` loop, return an empty string. Otherwise, return a message that may be sent to the user explaining why the submitted solution has failed.
 
 ```python
     def check_additonal_solution_criteria(self) -> str:

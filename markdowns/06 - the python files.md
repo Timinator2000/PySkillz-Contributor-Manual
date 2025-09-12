@@ -78,13 +78,13 @@ import random
 dir_path, _ = os.path.split(os.path.normpath(__file__))
 
 # Add tools directory to the OS PATH
-sys.path.insert(0, os.path.join(dir_path, '..', '..', '----tools----'))
+sys.path.insert(0, os.path.join(dir_path, '..', '..', '____tools____'))
 
 try:
     import pyskillz_tools
 
 except ImportError:
-    print(f'Import Error: pyskillz_tools.py needs to be in the “----tools----” folder, one level deep from python-project.')
+    print(f'Import Error: pyskillz_tools.py needs to be in the “____tools____” folder, one level deep from python-project.')
 
 ###############################################################################################################
 # End Setup
@@ -168,11 +168,11 @@ Remember: every test case must be a list of arguments, even if a test case only 
         return [random.randint(-100, 100), random.randint(-100, 100)]
 ```
 
-If you want to provide more detailed solution criteria, you __may__ override the `additional_solution_criteria` method. On the next page, more detail is given as to when you might want to do this.
+If you want to provide more detailed solution criteria, you __may__ override the `check_additional_solution_criteria` method. On the next page, more detail is given as to when you might want to override this method.
 
 ```python
-    def additonal_solution_criteria(self) -> bool:
-        return True
+    def check_additonal_solution_criteria(self) -> bool:
+        return ''
 ```
 
 Finally, replace `ExerciseName` below with the name of your new exercise class.

@@ -10,6 +10,8 @@ plan:
         statement: markdowns/02 - local setup.md
       - title: Project Structure
         statement: markdowns/03 - project structure.md
+      - title: Generatring an Exercise Template
+        statement: markdowns/03 5 - generating an exercise template.md
       - title: Creating a New Exercise
         statement: markdowns/04 - create a new exercise.md
       - title: Define Your Exercise
