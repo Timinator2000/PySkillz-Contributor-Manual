@@ -31,3 +31,11 @@ plan:
     plan:
       - title: Notes for Contributors
         statement: markdowns/20 - notes.md
+
+
+projects:
+  python:
+    root: /python-project
+    runner: 
+      name: python
+      version: '3'
