@@ -23,6 +23,7 @@ except ImportError:
 ###############################################################################################################
 
 import ast
+import re
 
 class ExerciseTemplate():
 
@@ -50,6 +51,11 @@ class ExerciseTemplate():
 
         for node in ast.walk(syntax_tree):
             if isinstance(node, ast.FunctionDef):
+                # Check function name
+                if not re.fullmatch(r'[a-z0-9_]+', node.name):
+                    return f"Invalid function name '{node.name}'. " + \
+                           f"Only lowercase letters, digits, and underscores are allowed."
+
                 # Check parameters
                 for arg in node.args.args + node.args.kwonlyargs:
                     if arg.annotation is None:
