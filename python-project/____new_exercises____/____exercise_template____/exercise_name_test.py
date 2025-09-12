@@ -58,8 +58,8 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
 
 
     def test_case_to_string(self, test_case) -> str:
-        a, b = test_case
-        return f'{a = }\n{b = }'
+        parameter_names = ['a', 'b']
+        return '\n'.join(f'{name} = {value}' for name, value in zip(parameter_names, test_case))
 
 
     def generate_random_test_case(self) -> list:

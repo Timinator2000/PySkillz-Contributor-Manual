@@ -74,20 +74,32 @@ class ExerciseTemplate():
         return ''
     
 
-    def markdown_file(self):
-        return 'markdown.md'
+    def markdown_file(self, filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        return text
 
 
-    def learner_file(self):
-        return 'exercise_name.py'
+    def learner_file(self, filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        return text
 
 
-    def solution_file(self):
-        return 'exercise_name_solution.py'
+    def solution_file(self, filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        return text
 
 
-    def test_file(self):
-        return 'exercise_name_test.py'
+    def test_file(self, filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        return text
 
 
 class ExerciseTemplateGenerator(pyskillz_tools.TechioInteraction):
@@ -111,10 +123,21 @@ class ExerciseTemplateGenerator(pyskillz_tools.TechioInteraction):
             return
         
         self.success()
-        self.send_multiline_text(markdown_channel, template.markdown_file())
-        self.send_multiline_text(learner_channel, template.learner_file())
-        self.send_multiline_text(solution_channel, template.solution_file())
-        self.send_multiline_text(test_channel, template.test_file())
+
+        path = os.path.join(self.dir_path, '..', '..', '____new_exercises____', '____exercise_template____')
+        path = os.path.normpath(path)
+        
+        filename = os.path.join(path, 'exercise_name.md')
+        self.send_multiline_text(markdown_channel, template.markdown_file(filename))
+
+        filename = os.path.join(path, 'exercise_name.py')
+        self.send_multiline_text(learner_channel, template.learner_file(filename))
+
+        filename = os.path.join(path, 'exercise_name_solution.py')
+        self.send_multiline_text(solution_channel, template.solution_file(filename))
+
+        filename = os.path.join(path, 'exercise_name_test.py')
+        self.send_multiline_text(test_channel, template.test_file(filename))
 
 
 if __name__ == "__main__":
