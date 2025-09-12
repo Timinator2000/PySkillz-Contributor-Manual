@@ -1,4 +1,4 @@
-# Last Edited: Sept 12, 2025 1:10pm
+# Last Edited: Sept 12, 2025 3:46pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter
@@ -195,6 +195,7 @@ class Exercise(TechioInteraction):
     def __init__(self, exercise_path, success_message):
         super().__init__(exercise_path)
         self.fixed_test_cases = []
+        self.parameter_names = []
         self.num_random_test_cases = 0
         self.success_message = success_message.strip()
         self.first_failed_test_case = None
@@ -255,8 +256,21 @@ class Exercise(TechioInteraction):
 
 
     def test_case_to_string(self, test_case) -> str:
-        print('THIS METHOD MUST BE OVERRIDDEN')
-        return None
+        if len(self.parameter_names) != len(test_case):
+            return  f'To use default test_case_to_string(), # of parameter names must be equal to # of test case arguments.\n' + \
+                    f'   parameter names     = {len(self.parameter_names)}\n' + \
+                    f'   test case arguments = {len(test_case)}'
+        
+        length = max(len(name) for name in self.parameter_names)
+
+        strings = []
+        for name, value in zip(self.parameter_names, test_case):
+            if type(value) == str:
+                value = f'{[value]}'[1:-1]
+
+            strings.append(f'{name:{length}} = {value}')
+
+        return '\n'.join(strings)
 
     
     def display_test_case(self, test_case) -> None:
@@ -524,6 +538,3 @@ class PrintBasedExercise(Exercise):
         msg += f'\nInput:\n'
         self.send_multiline_text(self.bug_channel, msg)
         self.display_test_case(self.first_failed_test_case)
-
-
-
