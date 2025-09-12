@@ -100,9 +100,11 @@ class ExerciseTemplateGenerator(pyskillz_tools.TechioInteraction):
         error = template.check_function_definition(syntax_tree=self.code_analysis['tree'])
 
         if error:
+            self.fail()
             self.send_msg(self.bug_channel, error)
             return
         
+        self.success()
         self.send_multiline_text(markdown_channel, template.markdown_file())
         self.send_multiline_text(learner_channel, template.learner_file())
         self.send_multiline_text(solution_channel, template.solution_file())
