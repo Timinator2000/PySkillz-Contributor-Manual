@@ -1,4 +1,4 @@
-# Last Edited: Sept 12, 2025 9:55am
+# Last Edited: Sept 12, 2025 1:10pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter
@@ -73,6 +73,10 @@ class TechioInteraction():
     # RUNNING_ON_TECH_IO = os.path.split(os.path.normpath(__file__))[0].startswith('/project/target')
 
     def __init__(self, exercise_path):
+
+        self.success_channel = Channel(f'{random.choice(CONGRATS)} {random.choice(CONGRATS_EMOJIS)}', 'Win🎉>')
+        self.bug_channel = Channel(f'{random.choice(BUG)} {random.choice(BUG_EMOJIS)}', 'Bug🐞>')
+        self.std_out_channel = Channel('Standard Output', 'StdOut>')
 
         # Strip the exercise_name out of the full exercise path passed in as an argument.
         self.dir_path, filename = os.path.split(os.path.normpath(exercise_path))
@@ -170,6 +174,7 @@ class TechioInteraction():
 
         return {
             "filename": filename,
+            "tree": tree,
             "source": source,
             "categories": categories,  # list of (node, category, keep, depth)
             "total_count": total_count,
@@ -194,10 +199,7 @@ class Exercise(TechioInteraction):
         self.success_message = success_message.strip()
         self.first_failed_test_case = None
 
-        self.success_channel = Channel(f'{random.choice(CONGRATS)} {random.choice(CONGRATS_EMOJIS)}', 'Win🎉>')
-        self.bug_channel = Channel(f'{random.choice(BUG)} {random.choice(BUG_EMOJIS)}', 'Bug🐞>')
         self.solution_channel = Channel('Suggested Solution ✅', 'Sol✅>')
-        self.std_out_channel = Channel('Standard Output', 'StdOut>')
 
         # Import the user solution from exercise_name.py
         module = importlib.import_module(self.exercise_name)
