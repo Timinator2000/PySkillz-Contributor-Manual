@@ -16,7 +16,7 @@ try:
     import pyskillz_tools
 
 except ImportError:
-    print(f'Import Error: pyskillz_tools.py needs to be in the “____tools____” folder, one level deep from python-project.')
+    print(f"Import Error: pyskillz_tools.py needs to be in the '____tools____' folder, one level deep from python-project.")
 
 ###############################################################################################################
 # End Setup

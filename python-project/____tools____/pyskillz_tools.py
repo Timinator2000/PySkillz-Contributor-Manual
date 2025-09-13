@@ -1,4 +1,4 @@
-# Last Edited: Sept 13, 2025 1:42pm
+# Last Edited: Sept 13, 2025 2:59pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -549,6 +549,7 @@ class ExerciseTemplate():
         self.parameters = []
         self.function_signature = function_signature
         self.class_name = ''
+        self.exercise_name = ''
 
     
     def check_function_definition(self, syntax_tree=None) -> str:
@@ -596,6 +597,7 @@ class ExerciseTemplate():
                 if node.name == 'exercise_name':
                     return f"Your function cannot be named 'exercise_name'."
 
+                self.exercise_name = node.name
                 self.class_name = node.name.replace('_', ' ').title().replace(' ', '')
 
                 return_type = ast.unparse(node.returns)
@@ -623,6 +625,9 @@ class ExerciseTemplate():
             if line.startswith('def'):
                 template = ['Exercise', 'PrintBasedExercise'][line.endswith('None:')]
                 line = self.function_signature
+
+            if 'a, b' in line:
+                line = line.replace('a, b', ', '.join(self.parameters))
 
             if template and (line == '' or line[0] != '#'):
                 template_text[template].append(line)
