@@ -50,7 +50,7 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
             []
         ]
 
-        # See the contributor guide if you wish to add any optional grading criteria.
+        # See the contributor guide if you wish to add any optional grading constraints.
 
         # Optional Exercise Constraints
         # self.max_statement_count =                 # Default is 10_000_000
@@ -71,7 +71,8 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
 
     # def test_case_to_string(self, test_case) -> str:
     #     a, b = test_case
-    #     return f'{a = }\n{b = }'
+    #     custom_string = ''
+    #     return custom_string
 
 
     # def check_additonal_solution_criteria(self) -> bool:
