@@ -90,7 +90,7 @@ class ExerciseTemplate():
 
     def markdown_file(self, filename):
         with open(filename, "r", encoding="utf-8") as f:
-            text = f.read()
+            text = f.read().split('\n')
 
         return text
     
@@ -170,28 +170,21 @@ class ExerciseTemplateGenerator(pyskillz_tools.TechioInteraction):
         path = os.path.join(self.dir_path, '..', '..', '____new_exercises____', '____exercise_template____')
         path = os.path.normpath(path)
         
-        function_signature = self.code_analysis['source'].split('\n')[0]
-        class_name = function_signature.split()[1]
-        class_name = class_name[:class_name.find('(')].replace('_', ' ').title().replace(' ', '')
-
         filename = os.path.join(path, 'exercise_name.md')
-        self.send_multiline_text(markdown_channel, template.markdown_file(filename))
-        print()
+        text = template.markdown_file(filename)
+        self.send_multiline_text(markdown_channel, '\n'.join(text))
 
         filename = os.path.join(path, 'exercise_name.py')
         text = template.retrieve_text(filename)
         self.send_multiline_text(learner_channel, '\n'.join(text))
-        print()
 
         filename = os.path.join(path, 'exercise_name_solution.py')
         text = template.retrieve_text(filename)
         self.send_multiline_text(solution_channel, '\n'.join(text))
-        print()
 
         filename = os.path.join(path, 'exercise_name_test.py')
         text = template.retrieve_test_file(filename)
         self.send_multiline_text(test_channel, '\n'.join(text))
-        print()
 
 
 if __name__ == "__main__":
