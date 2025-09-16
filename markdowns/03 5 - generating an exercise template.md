@@ -18,6 +18,9 @@ When you run the generator, you’ll see **four files created automatically**. T
 
 > ⚠️ **Gotcha:** Tech.io code blocks must be syntactically correct. Make sure to include `pass` as the only line inside your function so the code runs without errors.
 
+> 📖 **Coming up next:** On the next page, we’ll break down each of the four generated files and explain their purpose.
+
+<BR>
+
 @[Enter a Function Signature for a New Exercise]({"stubs": ["tools/template_generator_techio/template_generator_techio.py"], "command": "python3 tools/template_generator_techio/template_generator_techio_test.py"})
 
-> 📖 **Coming up next:** On the next page, we’ll break down each of the four generated files and explain their purpose.
