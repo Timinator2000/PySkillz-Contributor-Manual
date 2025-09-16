@@ -47,8 +47,8 @@ class ExerciseTemplateGeneratorTechio(pyskillz_tools.TechioInteraction):
 
         markdown_channel = pyskillz_tools.Channel(f'{template.exercise_name}.md 📄', 'Mkd📄>')
         learner_channel = pyskillz_tools.Channel(f'{template.exercise_name}.py 📄', 'Lrn📄>')
-        solution_channel = pyskillz_tools.Channel(f'{template.exercise_name}_solution.py ✅', 'Sol✅>')
-        test_channel = pyskillz_tools.Channel(f'{template.exercise_name}_test.py 🧪', 'Tst🧪>')
+        solution_channel = pyskillz_tools.Channel(f'{template.exercise_name}_solution.py 📄', 'Sol📄>')
+        test_channel = pyskillz_tools.Channel(f'{template.exercise_name}_test.py 📄', 'Tst📄>')
 
         path = os.path.join(self.dir_path, '..', '..', '____new_exercises____', '____exercise_template____')
         path = os.path.normpath(path)
