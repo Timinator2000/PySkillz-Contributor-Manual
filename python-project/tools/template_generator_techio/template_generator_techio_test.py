@@ -30,11 +30,6 @@ class ExerciseTemplateGeneratorTechio(pyskillz_tools.TechioInteraction):
 
 
     def run(self):
-        # markdown_channel = pyskillz_tools.Channel(f'Exercise Markdown 📚', 'Mkd📚>')
-        # learner_channel = pyskillz_tools.Channel(f'Learner Code Window 📚', 'Lrn📚>')
-        # solution_channel = pyskillz_tools.Channel(f'Solution File ✅', 'Sol✅>')
-        # test_channel = pyskillz_tools.Channel(f'Test File 🧪', 'Tst🧪>')
-
         for line in self.code_analysis['source'].split('\n'):
             if line.startswith('def'):
                 template = pyskillz_tools.ExerciseTemplate(function_signature=line)
@@ -50,8 +45,8 @@ class ExerciseTemplateGeneratorTechio(pyskillz_tools.TechioInteraction):
         
         self.success()
 
-        markdown_channel = pyskillz_tools.Channel(f'{template.exercise_name}.md 📚', 'Mkd📚>')
-        learner_channel = pyskillz_tools.Channel(f'{template.exercise_name}.py 📚', 'Lrn📚>')
+        markdown_channel = pyskillz_tools.Channel(f'{template.exercise_name}.md 📄', 'Mkd📄>')
+        learner_channel = pyskillz_tools.Channel(f'{template.exercise_name}.py 📄', 'Lrn📄>')
         solution_channel = pyskillz_tools.Channel(f'{template.exercise_name}_solution.py ✅', 'Sol✅>')
         test_channel = pyskillz_tools.Channel(f'{template.exercise_name}_test.py 🧪', 'Tst🧪>')
 

@@ -75,7 +75,7 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
     #     return custom_string
 
 
-    # def check_additonal_solution_criteria(self) -> bool:
+    # def check_additonal_solution_criteria(self) -> str:
     #     return ''
 
 
