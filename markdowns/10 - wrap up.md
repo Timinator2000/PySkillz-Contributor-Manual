@@ -8,7 +8,7 @@ By following the steps in this guide, you’ve:
 
 * Explored the project structure and understood the purpose of each file.
 
-* Created a new exercise using the template.
+* Created a new exercise using the **template generator**.
 
 * Written clear instructions in the `.md` file.
 
