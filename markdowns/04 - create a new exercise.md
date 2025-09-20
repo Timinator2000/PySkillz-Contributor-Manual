@@ -4,8 +4,8 @@ Creating a new exercise from scratch is quick and easy thanks to the exercise te
 
 ```text
 📂 python-project
-    📂 ----new_exercises----
-        📂 ----exercise_template----
+    📂 ____new_exercises____
+        📂 ____exercise_template____
             📄 exercise_name.md
             📄 exercise_name.py
             📄 exercise_name_solution.py
@@ -14,7 +14,7 @@ Creating a new exercise from scratch is quick and easy thanks to the exercise te
 
 To create your own exercise:
 
-1. Make a __full copy__ of the `----exercise_template----` folder inside the `----new_exercises----` folder.
+1. Make a __full copy__ of the `____exercise_template____` folder inside the `____new_exercises____` folder.
 
 2. Rename the copied folder and all of its files to match the name of your new exercise.
 
@@ -26,8 +26,8 @@ Your structure should now look something like this:
 
 ```
 📂 python-project
-    📂 ----new_exercises----
-        📂 ----exercise_template----
+    📂 ____new_exercises____
+        📂 ____exercise_template____
             📄 exercise_name.md
             📄 exercise_name.py
             📄 exercise_name_solution.py

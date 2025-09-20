@@ -50,34 +50,10 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
             []
         ]
 
-        # See the contributor guide if you wish to add any optional grading constraints.
-
-        # Optional Exercise Constraints
-        # self.max_statement_count =                 # Default is 10_000_000
-        # self.max_lines_of_code =                   # Default is 10_000_000
-
-        # Additional PrintBasedExercise Option
-        # self.strict_print_usage = True             # Default is False
-
 
     def generate_random_test_case(self) -> list:
         return [random.randint(-100, 100), random.randint(-100, 100)]
     
-
-    # Most exercises do NOT need to override the following methods. See
-    # the contributor guide if you wish to customize how a test case is
-    # displayed to the learner or if you wish to add custom grading
-    # criteria to an exercise.
-
-    # def test_case_to_string(self, test_case) -> str:
-    #     a, b = test_case
-    #     custom_string = ''
-    #     return custom_string
-
-
-    # def check_additonal_solution_criteria(self) -> str:
-    #     return ''
-
 
 if __name__ == "__main__":
     exercise = ExerciseName()
