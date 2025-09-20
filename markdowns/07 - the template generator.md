@@ -86,7 +86,7 @@ If you used the template generator, a lot of the setup has been done for you —
 
 * 🧪 Add a few `fixed_test_cases`.
 
-* 🎲 (Optional) Implement random test case generation if your exercise needs it.
+* 🎲 Implement random test case generation.
 
 Once those pieces are in place, you’re ready to test your new exercise! 🚀
 
