@@ -2,7 +2,7 @@
 
 Creating a new exercise from scratch is quick and easy thanks to the **exercise template generator** included in the `python-project` folder. Instead of writing everything manually, you only need to provide the function definition that will be shown to the learner. From that, the generator automatically produces all the files needed for your exercise, with much of the boilerplate already filled in.
 
-To help you understand how this works, we’ll first look at a **Tech.io web-based version** of the generator. This version is for experimentation only—it lets you try out the process without creating files on your computer.
+To help you understand how this works, we’ll first look at a **Tech.io web-based version** of the generator. This version is for experimentation only — it lets you try out the process without creating files on your computer.
 
 A few important notes when experimenting:
 

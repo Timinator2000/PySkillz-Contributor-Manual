@@ -125,7 +125,7 @@ On the second line, specify the parameter names. The superclass uses these names
 
 On the third line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
 
-Finally, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or fewer. Insert arguments into each test case placeholder.
+Finally, define a list of `fixed_test_cases`. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or fewer. Insert arguments into each test case placeholder.
 
 Remember: every test case must be a list of arguments, even if there is only one. For example:
 
@@ -167,6 +167,8 @@ if __name__ == "__main__":
 ```
 
 <BR>
+
+On the next page, we'll run the generator and create some real files. You'll see the generator does many of the steps above for you, but it cannot do them all!
 
 ************
 

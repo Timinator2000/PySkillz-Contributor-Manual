@@ -1,6 +1,6 @@
 # The Template Generator
 
-Let’s start by looking at a few folders and files inside the `python-project` folder:
+Now that you're familiar with all the necessary content, it is time to get back to using the template generator to do a lot of the work for you! Let’s start by looking at a few folders and files inside the `python-project` folder:
 
 ```text
 📂 python-project
@@ -27,6 +27,8 @@ To use the template generator, follow these steps:
    ```python
    function_signature = "def my_cool_exercise(some_string: str, some_integer: int) -> None:"
    ```
+
+   **Remember, the function return type determines if the generator creates an `Exercise` or a `PrintBasedExercise`.**
 
 3. Run the script. Your new exercise will appear inside `____new_exercises____`:
 
