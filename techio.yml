@@ -11,21 +11,25 @@ plan:
       - title: Project Structure
         statement: markdowns/03 - project structure.md
       - title: Generatring an Exercise Template
-        statement: markdowns/03 5 - generating an exercise template.md
+        statement: markdowns/04 - generating an exercise template.md
       - title: Creating a New Exercise
-        statement: markdowns/04 - create a new exercise.md
-      - title: Define Your Exercise
         statement: markdowns/05 - the markdown file.md
       - title: Code Your Exercise
         statement: markdowns/06 - the python files.md
-      - title: Optional Solution Criteria
-        statement: markdowns/07 - optional solution criteria.md
+      - title: The Template Generator
+        statement: markdowns/07 - the template generator.md
       - title: Testing
         statement: markdowns/08 - testing.md
       - title: Submit Your Exercise
         statement: markdowns/09 - submit your exercise.md
       - title: Congratulations
         statement: markdowns/10 - wrap up.md
+      # - title: Optional Solution Criteria
+      #   statement: markdowns/07 - optional solution criteria.md
+  - title: Customizing Your Exercise
+    plan:
+      - title: Needs Work
+        statement: markdowns/optional solution criteria.md
         
         
   - title: Notes

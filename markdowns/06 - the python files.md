@@ -1,6 +1,6 @@
 # Step 5: The Python Files
 
-To create a new exercise, three Python files need your attention:
+Every exercise requires three Python files:
 
 * `exercise_name.py`
   * The __starter code__ presented to the learner.
@@ -16,7 +16,14 @@ To create a new exercise, three Python files need your attention:
     *  The algorithm used to generate any random test cases.
     *  A success message displayed after the learner completes the exercise.
 
-Let’s now take a closer look at the contents of each file so you know __exactly what to edit__ to get your new exercise up and running.
+The template generator uses the files in the `____exercise_template____` folder to build a starting template for you.
+
+* If your function’s return type is `None`, the generator creates a `PrintBasedExercise` template.
+* If your function returns anything else, the generator creates an `Exercise` template.
+
+The discussion below explains the manual process of creating an exercise **without** the generator. When you use the generator, some of these steps will already be handled for you, but it’s still useful to understand how everything fits together.
+
+Now, let’s take a closer look at each file so you know **exactly what to edit** to get your new exercise up and running.
 
 # exercise_name.py
 
@@ -29,8 +36,7 @@ def exercise_name(a: int, b: int) -> int:
     return # Your code goes here.
 ```
 
-For exercises that take input and require the user to print an answer (`pyskillz_tools.PrintBasedExercise`), include a few extra comment lines.
-Since all `print` output is graded, remind users they can use `sys.stderr` for debug messages.
+For exercises that take input and require the user to print an answer (`pyskillz_tools.PrintBasedExercise`), include a few extra comment lines. Since all `print` output is graded, remind users they can use `sys.stderr` for debug messages.
 
 ```python
 def exercise_name(a: int, b: int) -> None:
@@ -38,7 +44,7 @@ def exercise_name(a: int, b: int) -> None:
     
     # Write an answer using print
     # To debug: import sys at the top of this script
-    #           print("Debug messages...", file=sys.stderr, flush=True)
+    #           print('Debug messages...', file=sys.stderr, flush=True)
 ```
 
 # exercise_name_solution.py
@@ -84,7 +90,7 @@ try:
     import pyskillz_tools
 
 except ImportError:
-    print(f'Import Error: pyskillz_tools.py needs to be in the “____tools____” folder, one level deep from python-project.')
+    print(f'Import Error: pyskillz_tools.py needs to be in the ____tools____ folder, one level deep from python-project.')
 
 ###############################################################################################################
 # End Setup
@@ -96,10 +102,10 @@ Next, define the message shown to the user when the exercise is completed succes
 For paragraphs that require automatic word wrapping, break the text into separate lines and concatenate them. This keeps the text easy to read in the code while still displaying correctly to the user.
 
 ```python
-success_message = """
+success_message = '''
 
 
-"""
+'''
 
 success_message += ''
 success_message += ''
@@ -115,9 +121,9 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
 
 The first line of the class constructor (`__init__` ) must remain unchanged. It calls the superclass constructor, passing the full filename and the success message.
 
-On the second line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
+On the second line, specify the parameter names. The superclass uses these names when displaying a test case to the learner. 
 
-The next several lines are all optional constraints that can be added to an exercise. Each of these constraints is covered in more detail on the next page.
+On the third line, specify the number of random test cases your exercise should generate. Random test cases are not required but are highly encouraged — they are simple to create and add robustness to the testing strategy.
 
 Finally, define a list of fixed test cases. Each test case is itself a list of arguments. The stub code below includes 5 empty test cases as placeholders, but you may use more or fewer. Insert arguments into each test case placeholder.
 
@@ -131,14 +137,8 @@ Remember: every test case must be a list of arguments, even if there is only one
     def __init__(self):
 
         super().__init__(__file__, success_message)
-        self.num_random_test_cases = 100
-
-        # Exercise Constraints (Optional)
-        # self.max_statement_count =                 # Default is 10_000_000
-        # self.max_lines_of_code =                   # Default is 10_000_000
-
-        # Additional PrintBasedExercise Option
-        # self.strict_print_usage = True             # Default is False
+        self.parameter_names = ['param_1', 'param_2']
+        self.num_random_test_cases = 1000
 
         self.fixed_test_cases = [
             [],
@@ -149,16 +149,6 @@ Remember: every test case must be a list of arguments, even if there is only one
         ]
 ```
 
-You must override the `test_case_to_string` method to format a test case for printing by returning a single string. In the example below, the test case is unpacked into two variables (`a` and `b`), and their values are inserted into f-strings. A new line is inserted between the two arguments to print each on a separate line.
-
-```python
-    def test_case_to_string(self, test_case) -> str:
-        a, b = test_case
-        return f'{a = }\n{b = }'
-```
-
-You have plenty of flexibility in how you format a test case for output. Just keep in mind that the main goal is to make the output easy to read and understand.
-
 If your exercise includes random test cases, override the `generate_random_test_case` method. In the example below, the method returns a list of two arguments, each a random number between -100 and 100.
 
 Remember: every test case must be a list of arguments, even if a test case only contains a single argument.
@@ -166,13 +156,6 @@ Remember: every test case must be a list of arguments, even if a test case only 
 ```python
     def generate_random_test_case(self) -> list:
         return [random.randint(-100, 100), random.randint(-100, 100)]
-```
-
-If you want to provide more detailed solution criteria, you __may__ override the `check_additional_solution_criteria` method. On the next page, more detail is given as to when you might want to override this method.
-
-```python
-    def check_additonal_solution_criteria(self) -> bool:
-        return ''
 ```
 
 Finally, replace `ExerciseName` below with the name of your new exercise class.
