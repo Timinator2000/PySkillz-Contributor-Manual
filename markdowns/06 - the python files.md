@@ -23,7 +23,7 @@ The template generator uses the files in the `____exercise_template____` folder 
 
 Now, let’s take a closer look at each file so you know **exactly what to edit** to get your new exercise up and running.
 
-<BR>
+*****************
 
 >The following discussion explains the manual process of creating an exercise **without** the generator. When you use the generator, some of these steps will already be handled for you, but it’s still useful to understand how everything fits together.
 
