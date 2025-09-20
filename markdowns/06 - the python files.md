@@ -27,7 +27,7 @@ Now, let’s take a closer look at each file so you know **exactly what to edit*
 
 <BR>
 
->The following discussion explains the manual process of creating an exercise **without** the generator. When you use the generator, some of these steps will already be handled for you, but it’s still useful to understand how everything fits together.
+>The following discussion explains the manual process of creating an exercise **without** the generator. When you use the generator, some **(but not all)** of these steps will already be handled for you, but it’s still useful to understand how everything fits together.
 
 # exercise_name.py
 
