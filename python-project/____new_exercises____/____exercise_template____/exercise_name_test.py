@@ -16,17 +16,17 @@ try:
     import pyskillz_tools
 
 except ImportError:
-    print(f"Import Error: pyskillz_tools.py needs to be in the '____tools____' folder, one level deep from python-project.")
+    print(f'Import Error: pyskillz_tools.py needs to be in the ____tools____ folder, one level deep from python-project.')
 
 ###############################################################################################################
 # End Setup
 ###############################################################################################################
 
 
-success_message = """
+success_message = '''
 
 
-"""
+'''
 
 success_message += ''
 success_message += ''
@@ -55,6 +55,6 @@ class ExerciseName(pyskillz_tools.PrintBasedExercise):
         return [random.randint(-100, 100), random.randint(-100, 100)]
     
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     exercise = ExerciseName()
     exercise.run()
