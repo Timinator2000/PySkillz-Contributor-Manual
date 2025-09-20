@@ -21,9 +21,9 @@ The template generator uses the files in the `____exercise_template____` folder 
 * If your function’s return type is `None`, the generator creates a `PrintBasedExercise` template.
 * If your function returns anything else, the generator creates an `Exercise` template.
 
-The discussion below explains the manual process of creating an exercise **without** the generator. When you use the generator, some of these steps will already be handled for you, but it’s still useful to understand how everything fits together.
-
 Now, let’s take a closer look at each file so you know **exactly what to edit** to get your new exercise up and running.
+
+>The discussion below explains the manual process of creating an exercise **without** the generator. When you use the generator, many of these steps will already be handled for you, but it’s still useful to understand how everything fits together.
 
 # exercise_name.py
 
