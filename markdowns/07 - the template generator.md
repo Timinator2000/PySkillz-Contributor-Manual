@@ -80,13 +80,13 @@ At this point, your folder structure is complete and your exercise shell is read
 
 If you used the template generator, a lot of the setup has been done for you — but there are still a few things you must add yourself:
 
-✍️ **Write the solution** in the `_solution.py` file.
+* ✍️ **Write the solution** in the `_solution.py` file.
 
-✅ Define the `success_message`.
+* ✅ Define the `success_message`.
 
-🧪 Add a few `fixed_test_cases`.
+* 🧪 Add a few `fixed_test_cases`.
 
-🎲 (Optional) Implement random test case generation if your exercise needs it.
+* 🎲 (Optional) Implement random test case generation if your exercise needs it.
 
 Once those pieces are in place, you’re ready to test your new exercise! 🚀
 
