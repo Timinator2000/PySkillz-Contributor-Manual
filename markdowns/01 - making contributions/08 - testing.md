@@ -35,4 +35,4 @@ Any debug output sent to `sys.stderr` will follow your terminal’s default beha
 
 ************
 
-[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

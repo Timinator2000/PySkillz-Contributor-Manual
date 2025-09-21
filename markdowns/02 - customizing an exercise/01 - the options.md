@@ -40,3 +40,9 @@ If the built-in options aren’t enough, your exercise subclass can override one
 3) If code passes #2, check `lines_of_code` vs `max_lines_of_code`
 
 4) If code passes #3, check any additional grader criteria by calling `check_additonal_solution_criteria` method.
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

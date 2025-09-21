@@ -1,4 +1,4 @@
-![PySkillz](../graphics/PySkillzBanner.png)
+![PySkillz](../../graphics/PySkillzBanner.png)
 
 # Welcome to the PySkillz Contributor Guide 🎉
 
@@ -20,7 +20,7 @@ Ready to make your first contribution? Let’s dive in 🚀
 
 ************
 
-[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)
 
 |:-------:|
 | <span style="font-size: 100%"><b>_Click the python at the bottom of any page to jump directly to the main PySkillz playground._</b></span>|

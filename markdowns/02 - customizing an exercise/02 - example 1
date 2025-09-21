@@ -213,3 +213,10 @@ By overriding the `check_additonal_solution_criteria` as shown below, you can yo
 
         return 'Your code must include a while loop to successfully complete this exercise.'
 ```
+
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

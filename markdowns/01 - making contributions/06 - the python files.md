@@ -176,4 +176,4 @@ On the next page, we'll run the generator and create some real files. You'll see
 
 ************
 
-[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

@@ -30,4 +30,4 @@ Thank you for your time, effort, and dedication. __Happy coding and happy teachi
 
 ************
 
-[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

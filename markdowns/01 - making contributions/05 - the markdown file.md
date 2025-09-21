@@ -50,4 +50,4 @@ Once your `.md` file is ready, you’ve given learners everything they need to u
 
 ************
 
-[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

@@ -25,3 +25,9 @@ When you run the generator, you’ll see **four files created automatically**. T
 <BR>
 
 > 📖 **Coming up next:** On the next two pages, we’ll break down each of the four generated files and explain their purpose.
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

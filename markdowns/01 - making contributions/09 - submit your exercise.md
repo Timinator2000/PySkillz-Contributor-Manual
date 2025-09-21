@@ -91,3 +91,9 @@ _(Replace `master` with your branch name if you are using a feature branch.)_
 * Once merged, 🎉 your exercise becomes live in the playground for learners!
 
 >💡 Tip: Always double-check your folder and file names before committing. GitHub is case-sensitive, and the playground relies on the exact naming conventions.
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

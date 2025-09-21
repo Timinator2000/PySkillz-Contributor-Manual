@@ -94,4 +94,4 @@ Once those pieces are in place, you’re ready to test your new exercise! 🚀
 
 ************
 
-[![Skillz Catalog](../graphics/PySkillzFooter.png)](skillz-catalog)
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)
