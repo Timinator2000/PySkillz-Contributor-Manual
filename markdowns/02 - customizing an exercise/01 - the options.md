@@ -26,7 +26,7 @@ If the built-in options aren’t enough, your exercise subclass can override one
 * **`check_additional_solution_criteria`**
   Lets you add custom checks on the learner’s code beyond correctness. For instance, you could confirm that the solution includes at least one `for` loop, avoids certain functions, or uses recursion.
 
-**********
+# Next Steps
 
 Now that we’ve seen the different customization options available, let’s look at them in action. We’ll start with a very simple problem — printing “Hello, World!” three times. Even for a task this basic, learners can solve it in many different ways, and you may decide to customize your exercise to encourage or require a particular style of solution.
 
