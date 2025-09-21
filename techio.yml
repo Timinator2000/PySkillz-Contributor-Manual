@@ -28,9 +28,9 @@ plan:
   - title: Customizing an Exercise
     plan:
       - title: Customization Options
-        statement: markdowns/02 - customization an exercise/the options.md
+        statement: markdowns/02 - customizing an exercise/the options.md
       - title: Examples
-        statement: markdowns/02 - customization an exercise/example 1.md
+        statement: markdowns/02 - customizing an exercise/example 1.md
         
   - title: Notes
     plan:
