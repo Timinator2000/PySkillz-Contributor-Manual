@@ -30,7 +30,7 @@ plan:
       - title: Customization Options
         statement: markdowns/02 - customizing an exercise/01 - the options.md
       - title: Examples
-        statement: markdowns/02 - customizing an exercise/02 - example 1.md
+        statement: markdowns/02 - customizing an exercise/02 - hello world 3 times.md
         
   - title: Notes
     plan:

@@ -1,4 +1,4 @@
-# Hello World 3 Times
+# Hello, World! 3 Times
 
 Consider the following exercise: Print the following text:
 
@@ -15,15 +15,13 @@ def hello_word_3_times():
     # Your code goes here.
 ```
 
-How many different solutions could you write? Probably a bunch! Let’s look at several different ways to code a solution. For each solution, we’ll analyze:
+Even a simple task like this can be solved in many different ways. Let’s look at several valid approaches. For each solution, we’ll analyze:
 
 * **Number of calls to `print`** (during execution)
-* **Number of lines of code** (function header + code, but no blank lines or comment lines)
-* **Number of Python statements** (measured by parsing the code)
+* **Lines of code** (counting the function header and logical lines, but skipping blank lines)
+* **Statements** (Python statements, including function definitions)
 
----
-
-# Solution 1: Three direct print calls
+# Three Direct Print Calls
 
 ```python
 def hello_word_3_times():
@@ -36,9 +34,28 @@ def hello_word_3_times():
 * **Lines of code:** 4
 * **Statements:** 3
 
----
+# Multi-Line String
 
-# Solution 2: Using a `for` loop
+```python
+message = '''
+
+Hello, World!
+Hello, World!
+Hello, World!
+
+'''.strip()
+
+def hello_word_3_times():
+    print(message)
+```
+
+* **Calls to `print`:** 1
+* **Lines of code:** 3 (1 for the assignment, 1 for the function header, 1 for the print statement)
+* **Statements:** 3 (`message = ...`, `def hello_word_3_times():`, `print(message)`)
+
+> Note: Even though the multi-line string spans multiple physical lines in the editor, it counts as **one logical statement** for `max_lines_of_code` purposes.
+
+# Using a `for` Loop
 
 ```python
 def hello_word_3_times():
@@ -52,7 +69,7 @@ def hello_word_3_times():
 
 ---
 
-# Solution 3: Using a `while` loop
+### Solution 3: Using a `while` loop
 
 ```python
 def hello_word_3_times():
@@ -109,63 +126,15 @@ def hello_word_3_times(n=3):
 
 ---
 
-### Solution 7: Assign a reference to `print`
-
-```python
-def hello_word_3_times():
-    p = print
-    p("Hello, World!")
-    p("Hello, World!")
-    p("Hello, World!")
-```
-
-* **Calls to `print`:** 3
-* **Lines of code:** 5
-* **Statements:** 4
 
 ---
 
-### Solution 8: Loop over a list of values
-
-```python
-def hello_word_3_times():
-    for _ in ["a", "b", "c"]:
-        print("Hello, World!")
-```
-
-* **Calls to `print`:** 3
-* **Lines of code:** 3
-* **Statements:** 2
+Even for a simple exercise, the variety of valid solutions shows why options like `strict_print_usage`, `max_statement_count`, and `floating_point_precision` can be important. They help you guide learners toward the style of solution you want to encourage.
 
 ---
 
-### Solution 9: Map with a throwaway function
+If you want, I can **also add a summary table** of all 7 solutions with calls to `print`, lines of code, and statements for quick reference—it makes the page easier to scan at a glance. Do you want me to do that?
 
-```python
-def hello_word_3_times():
-    list(map(lambda _: print("Hello, World!"), range(3)))
-```
-
-* **Calls to `print`:** 3
-* **Lines of code:** 2
-* **Statements:** 1
-
----
-
-### Solution 10: Comprehension with side effect
-
-```python
-def hello_word_3_times():
-    [print("Hello, World!") for _ in range(3)]
-```
-
-* **Calls to `print`:** 3
-* **Lines of code:** 2
-* **Statements:** 1
-
----
-
-Even for a simple exercise like printing three lines, the number of `print` calls, lines of code, and statements can vary a lot depending on the learner’s approach. This variety is exactly why the customization options (`strict_print_usage`, `max_statement_count`, etc.) are so useful—they let you tune the grader to emphasize the style of solution you want learners to produce.
 
 ---
 
