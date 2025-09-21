@@ -5,37 +5,37 @@ plan:
   - title: Making Contributions to PySkillz
     plan:
       - title: Getting Started
-        statement: markdowns/01 - getting started.md
+        statement: markdowns/01 - making contributions/01 - getting started.md
       - title: Set Up Your Local Workspace
-        statement: markdowns/02 - local setup.md
+        statement: markdowns/01 - making contributions/02 - local setup.md
       - title: Project Structure
-        statement: markdowns/03 - project structure.md
+        statement: markdowns/01 - making contributions/03 - project structure.md
       - title: Generatring an Exercise Template
-        statement: markdowns/04 - generating an exercise template.md
+        statement: markdowns/01 - making contributions/04 - generating an exercise template.md
       - title: Write Your Exercise Instructions
-        statement: markdowns/05 - the markdown file.md
+        statement: markdowns/01 - making contributions/05 - the markdown file.md
       - title: Code Your Exercise
-        statement: markdowns/06 - the python files.md
+        statement: markdowns/01 - making contributions/06 - the python files.md
       - title: The Template Generator
-        statement: markdowns/07 - the template generator.md
+        statement: markdowns/01 - making contributions/07 - the template generator.md
       - title: Testing
-        statement: markdowns/08 - testing.md
+        statement: markdowns/01 - making contributions/08 - testing.md
       - title: Submit Your Exercise
-        statement: markdowns/09 - submit your exercise.md
+        statement: markdowns/01 - making contributions/09 - submit your exercise.md
       - title: Congratulations
-        statement: markdowns/10 - wrap up.md
-      # - title: Optional Solution Criteria
-      #   statement: markdowns/07 - optional solution criteria.md
-  - title: Customizing an Exercise (Optional)
+        statement: markdowns/01 - making contributions/10 - wrap up.md
+  
+  - title: Customizing an Exercise
     plan:
-      - title: Needs Work
-        statement: markdowns/optional solution criteria.md
-        
+      - title: Customization Options
+        statement: markdowns/02 - customization an exercise/the options.md
+      - title: Examples
+        statement: markdowns/02 - customization an exercise/example 1.md
         
   - title: Notes
     plan:
       - title: Notes for Contributors
-        statement: markdowns/20 - notes.md
+        statement: markdowns/03 - notes/01 - notes.md
 
 
 projects:
