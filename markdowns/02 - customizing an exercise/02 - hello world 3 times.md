@@ -1,4 +1,4 @@
-# Hello, World! 3 Times
+# Hello, World! (3 Times)
 
 Consider the following exercise: Print the following text:
 
