@@ -1,6 +1,8 @@
 # Hello, World! (3 Times)
 
-Consider the following exercise: Print the following text:
+Consider the following exercise: 
+
+Print the following text:
 
 ```text
 Hello, World!
@@ -21,7 +23,7 @@ Even a simple task like this can be solved in many different ways. Let’s look 
 # Three Direct Print Calls
 
 ```python
-def hello_word_3_times():
+def hello_world_3x():
     print("Hello, World!")
     print("Hello, World!")
     print("Hello, World!")
@@ -42,7 +44,7 @@ Hello, World!
 
 '''.strip()
 
-def hello_word_3_times():
+def hello_world_3x():
     print(message)
 ```
 
@@ -53,7 +55,7 @@ def hello_word_3_times():
 # Using a `for` Loop
 
 ```python
-def hello_word_3_times():
+def hello_world_3x():
     for _ in range(3):
         print("Hello, World!")
 ```
@@ -65,7 +67,7 @@ def hello_word_3_times():
 # Using a `while` Loop
 
 ```python
-def hello_word_3_times():
+def hello_world_3x():
     i = 0
     while i < 3:
         print("Hello, World!")
@@ -79,7 +81,7 @@ def hello_word_3_times():
 # Joining a List
 
 ```python
-def hello_word_3_times():
+def hello_world_3x():
     print("\n".join(["Hello, World!"] * 3))
 ```
 
@@ -90,10 +92,10 @@ def hello_word_3_times():
 # Recursion
 
 ```python
-def hello_word_3_times(n=3):
+def hello_world_3x(n=3):
     if n > 0:
         print("Hello, World!")
-        hello_word_3_times(n - 1)
+        hello_world_3x(n - 1)
 ```
 
 * **Calls to `print`:** 3
