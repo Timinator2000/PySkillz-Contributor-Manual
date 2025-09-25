@@ -8,7 +8,7 @@ Hello, World!
 Hello, World!
 ```
 
-@[How many solutions can you find?]({"stubs": ["exercises/hello_word_3x/hello_world_3x.py"], "command": "python3 exercises/hello_word_3x/hello_world_3x_test.py"})
+@[How many solutions can you find?]({"stubs": ["exercises/hello_world_3x/hello_world_3x.py"], "command": "python3 exercises/hello_world_3x/hello_world_3x_test.py"})
 
 Even a simple task like this can be solved in many different ways. Let’s look at several valid approaches. For each solution, we’ll analyze: 
 
