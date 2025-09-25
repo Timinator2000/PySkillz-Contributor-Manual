@@ -50,8 +50,8 @@ class HelloWorld3X(pyskillz_tools.PrintBasedExercise):
         self.send_multiline_text(stats_channel, self.get_code_analysis('basic_stats'))
 
 
-    # def display_solution(self):
-    #     pass
+    def display_solution(self):
+        return
 
 
 if __name__ == "__main__":
