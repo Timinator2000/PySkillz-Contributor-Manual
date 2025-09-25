@@ -1,4 +1,4 @@
-# Last Edited: Sept 25, 2025 5:13am
+# Last Edited: Sept 25, 2025 5:56am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -404,7 +404,8 @@ class Exercise(TechioInteraction):
     
 
     def display_success_message(self):
-        self.send_multiline_text(self.success_channel, self.success_message)
+        if self.success_message:
+            self.send_multiline_text(self.success_channel, self.success_message)
 
 
     def display_solution(self):

@@ -1,3 +1,5 @@
+# Only two of the suggested solutions make only 1 call to print:
+
 # 2️⃣ Multi-Line String
 message = '''
 
