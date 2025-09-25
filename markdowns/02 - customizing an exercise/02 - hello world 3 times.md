@@ -31,7 +31,7 @@ def hello_world_3x():
 
 * **Calls to `print`:** 3
 * **Lines of code:** 4
-* **Statements:** 4 (function definition, `print`, `print`, `print`)
+* **Statements:** 4 (`hello_world_3x()`, `print`, `print`, `print`)
 
 # Multi-Line String
 
@@ -50,7 +50,7 @@ def hello_world_3x():
 
 * **Calls to `print`:** 1
 * **Lines of code:** 7
-* **Statements:** 3 (`message = ...`, function definition, `print(message)`)
+* **Statements:** 3 (`message = ...`, `hello_world_3x()`, `print(message)`)
 
 # Using a `for` Loop
 
@@ -62,7 +62,7 @@ def hello_world_3x():
 
 * **Calls to `print`:** 3
 * **Lines of code:** 3
-* **Statements:** 3 (function definition, `for`, `print`)
+* **Statements:** 3 (`hello_world_3x()`, `for`, `print`)
 
 # Using a `while` Loop
 
@@ -76,7 +76,7 @@ def hello_world_3x():
 
 * **Calls to `print`:** 3
 * **Lines of code:** 5
-* **Statements:** 5 (function definition, `i=0`, `while`, `print`, `i+=1`)
+* **Statements:** 5 (`hello_world_3x()`, `i=0`, `while`, `print`, `i+=1`)
 
 # Joining a List
 
@@ -87,7 +87,7 @@ def hello_world_3x():
 
 * **Calls to `print`:** 1
 * **Lines of code:** 2
-* **Statements:** 2 (function definition, `print`)
+* **Statements:** 2 (`hello_world_3x()`, `print`)
 
 # Recursion
 
@@ -100,7 +100,7 @@ def hello_world_3x(n=3):
 
 * **Calls to `print`:** 3
 * **Lines of code:** 4
-* **Statements:** 4 (function definition, `if`, `print`, recursive call)
+* **Statements:** 4 (`hello_world_3x()`, `if`, `print`, recursive call)
 
 ---
 
