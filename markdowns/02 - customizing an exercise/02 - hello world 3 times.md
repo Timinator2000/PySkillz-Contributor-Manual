@@ -23,7 +23,7 @@ Even a simple task like this can be solved in many different ways. Let’s look 
 # Three Direct Print Calls
 
 ```python
-def hello_world_3x():
+def hello_world_3x() -> None:
     print("Hello, World!")
     print("Hello, World!")
     print("Hello, World!")
@@ -44,7 +44,7 @@ Hello, World!
 
 '''.strip()
 
-def hello_world_3x():
+def hello_world_3x() -> None:
     print(message)
 ```
 
@@ -55,7 +55,7 @@ def hello_world_3x():
 # Using a `for` Loop
 
 ```python
-def hello_world_3x():
+def hello_world_3x() -> None:
     for _ in range(3):
         print("Hello, World!")
 ```
@@ -67,7 +67,7 @@ def hello_world_3x():
 # Using a `while` Loop
 
 ```python
-def hello_world_3x():
+def hello_world_3x() -> None:
     i = 0
     while i < 3:
         print("Hello, World!")
@@ -81,7 +81,7 @@ def hello_world_3x():
 # Joining a List
 
 ```python
-def hello_world_3x():
+def hello_world_3x() -> None:
     print("\n".join(["Hello, World!"] * 3))
 ```
 
@@ -92,7 +92,7 @@ def hello_world_3x():
 # Recursion
 
 ```python
-def hello_world_3x(n=3):
+def hello_world_3x(n=3) -> None:
     if n > 0:
         print("Hello, World!")
         hello_world_3x(n - 1)
