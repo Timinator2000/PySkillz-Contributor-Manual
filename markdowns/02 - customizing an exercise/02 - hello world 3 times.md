@@ -62,7 +62,7 @@ def hello_word_3_times():
 * **Lines of code:** 3
 * **Statements:** 3 (function definition, `for`, `print`)
 
-# Using a `while` loop
+# Using a `while` Loop
 
 ```python
 def hello_word_3_times():
@@ -76,7 +76,7 @@ def hello_word_3_times():
 * **Lines of code:** 5
 * **Statements:** 5 (function definition, `i=0`, `while`, `print`, `i+=1`)
 
-# Joining a list
+# Joining a List
 
 ```python
 def hello_word_3_times():
