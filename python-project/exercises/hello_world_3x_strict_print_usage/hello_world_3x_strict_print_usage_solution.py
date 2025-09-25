@@ -7,10 +7,10 @@ Hello, World!
 
 '''.strip()
 
-def hello_world_3x_strict_printing() -> None:
+def hello_world_3x_strict_print_usage() -> None:
     print(message)
 
 
 # 5️⃣ Joining a List
-def hello_world_3x_strict_printing_alt() -> None:
+def hello_world_3x_strict_print_usage_alt() -> None:
     print("\n".join(["Hello, World!"] * 3))

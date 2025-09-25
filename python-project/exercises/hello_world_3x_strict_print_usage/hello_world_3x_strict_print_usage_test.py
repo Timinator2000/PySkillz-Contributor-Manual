@@ -23,14 +23,14 @@ except ImportError:
 ###############################################################################################################
 
 
-class HelloWorld3XStrictPrinting(pyskillz_tools.PrintBasedExercise):
+class HelloWorld3XStrictPrintUsage(pyskillz_tools.PrintBasedExercise):
     
     def __init__(self):
 
         super().__init__(__file__)
         self.fixed_test_cases = [[]]
 
-        self.strict_printing = True
+        self.strict_print_usage = True
 
     
     def test_case_to_string(self, test_case) -> str:
@@ -38,5 +38,5 @@ class HelloWorld3XStrictPrinting(pyskillz_tools.PrintBasedExercise):
 
 
 if __name__ == "__main__":
-    exercise = HelloWorld3XStrictPrinting()
+    exercise = HelloWorld3XStrictPrintUsage()
     exercise.run()
