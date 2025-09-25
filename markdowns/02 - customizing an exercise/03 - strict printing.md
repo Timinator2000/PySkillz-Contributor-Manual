@@ -22,4 +22,4 @@ Hello, World!
 Hello, World!
 ```
 
-@[Make sure you only call `print` a single time!]({"stubs": ["exercises/hello_world_3x_strict_printing/hello_world_3x_strict_printing.py"], "command": "python3 exercises/hello_world_3x/hello_world_3x_strict_printing_test.py"})
+@[Make sure you only call print a single time!]({"stubs": ["exercises/hello_world_3x_strict_printing/hello_world_3x_strict_printing.py"], "command": "python3 exercises/hello_world_3x_strict_printing/hello_world_3x_strict_printing_test.py"})
