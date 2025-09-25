@@ -41,8 +41,8 @@ class HelloWorld3X(pyskillz_tools.PrintBasedExercise):
         self.fixed_test_cases = [[]]
 
     
-    def test_case_to_string(self) -> str:
-        return "There are test cases for this exercise. You just need to print 'Hello, World!' 3 times."
+    def test_case_to_string(self, test_case) -> str:
+        return 'There are test cases for this exercise. You just need to print /'Hello, World!/' 3 times.'
     
 
 if __name__ == "__main__":
