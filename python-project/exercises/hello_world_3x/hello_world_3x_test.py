@@ -42,7 +42,7 @@ class HelloWorld3X(pyskillz_tools.PrintBasedExercise):
 
     
     def test_case_to_string(self, test_case) -> str:
-        return 'There are test cases for this exercise. You just need to print /'Hello, World!/' 3 times.'
+        return 'There are no test cases for this exercise. You just need to print \'Hello, World!\' 3 times.'
     
 
 if __name__ == "__main__":
