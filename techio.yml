@@ -33,8 +33,8 @@ plan:
         statement: markdowns/02 - customizing an exercise/02 - hello world 3 times.md
       - title: Strict Print Usage
         statement: markdowns/02 - customizing an exercise/03 - strict print usage.md
-      - title: Restricting Lines of Code
-        statement: markdowns/02 - customizing an exercise/04 - restricting loc.md
+      # - title: Restricting Lines of Code
+      #   statement: markdowns/02 - customizing an exercise/04 - restricting loc.md
         
   - title: Notes
     plan:

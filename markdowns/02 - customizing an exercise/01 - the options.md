@@ -30,21 +30,6 @@ If the built-in options aren’t enough, your exercise subclass can override one
 
 Now that we’ve seen the different customization options available, let’s look at them in action. We’ll start with a very simple problem — printing “Hello, World!” three times. Even for a task this basic, learners can solve it in many different ways, and you may decide to customize your exercise to encourage or require a particular style of solution.
 
-
-
-
-# I'M NOT SURE THIS WILL BE USED:
-
-1) Compare user solution to grader solution.
-
-  * if `strict_print_usage` = `True`, more checking is done.
-
-2) If all test cases pass #1, check `statement_count` vs `max_statement_count`
-
-3) If code passes #2, check `lines_of_code` vs `max_lines_of_code`
-
-4) If code passes #3, check any additional grader criteria by calling `check_additonal_solution_criteria` method.
-
 <BR>
 
 ************

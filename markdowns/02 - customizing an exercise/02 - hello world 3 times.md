@@ -115,49 +115,6 @@ Even for a simple exercise, the variety of valid solutions shows how options lik
 | 5️⃣ | Joining a List | 1 | 2 | 2 |
 | 6️⃣ | Recursion | 3 | 4 | 4 |
 
-
-
-
-
-
-# Overriding the `check_additonal_solution_criteria` Method
-
-Look at all the possible soltutions above. Let's say the exercise asked the user to use a `while` loop. All `Exercise`s are, ultimately, subclasses a `TechioObject`. A `TechioObject` object only exists after a learner clicks on **Run** in a graded code block. During the object instantiation, a code analysis is run on the learner's code and saved in `self.code_analysis`, a dictionary with the following important keys:
-
-| Key | Meaning |
-|:---:|:--------|
-| filename | learner's source code filename |
-| source | learner's full source code |
-| categories | list of (node, category, keep, depth) |
-| total_count | number of statements |
-| **kept** | `Counter` with keys being code constructs |
-| skipped | `Counter` with keys being code constructs |
-| total_lines | total lines in the the learner's source code |
-| non_blank_lines | number of lines that are not blank |
-| comment_lines | number of comment lines in the learner's code |
-| effective_code_lines | lines of code = `non_blank_lines - comment_lines' |
-
-You are free to use this information in any way to determine if the learner has met the exercise objectives. In the end, `check_additonal_solution_criteria` must return a string. An empty string indicates all additional criteria have been met. Any other string should be a message to be displayed to the learner explaining what additional criteria **has not** been met.
-
-For instance, if the the exercise above was written as:
-
->Use a `while` loop to print the following:
->
->Hello, World!
->Hello, World!
->Hello, World!
-
-By overriding the `check_additonal_solution_criteria` as shown below, you can you check to make sure the leaner used a `while` loop as compared to a `for` loop or simply `str.join`? If you find a `while` loop, return an empty string. Otherwise, return a message that may be sent to the user explaining why the submitted solution has failed.
-
-```python
-    def check_additonal_solution_criteria(self) -> str:
-        if 'while' in self.code_analysis.kept:
-            return ''
-
-        return 'Your code must include a while loop to successfully complete this exercise.'
-```
-
-
 <BR>
 
 ************
