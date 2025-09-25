@@ -1,4 +1,4 @@
-# Last Edited: Sept 25, 2025 4:24am
+# Last Edited: Sept 25, 2025 5:13am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -263,7 +263,7 @@ class Exercise(TechioInteraction):
     PRINT_TEST_CASES = False
     CONTAINERS = ['list', 'tuple', 'set']
 
-    def __init__(self, exercise_path, success_message):
+    def __init__(self, exercise_path, success_message=''):
         super().__init__(exercise_path)
         self.fixed_test_cases = []
         self.parameter_names = []
@@ -502,7 +502,7 @@ class IOLog:
 
 class PrintBasedExercise(Exercise):
 
-    def __init__(self, exercise_path, success_message):
+    def __init__(self, exercise_path, success_message=''):
         super().__init__(exercise_path, success_message)
         self.normal_print = builtins.print
         self.strict_print_usage = False

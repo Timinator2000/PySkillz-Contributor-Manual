@@ -23,21 +23,11 @@ except ImportError:
 ###############################################################################################################
 
 
-success_message = """
-
-
-"""
-
-success_message += ''
-success_message += ''
-success_message += ''
-
-
 class HelloWorld3X(pyskillz_tools.PrintBasedExercise):
     
     def __init__(self):
 
-        super().__init__(__file__, success_message)
+        super().__init__(__file__)
         self.fixed_test_cases = [[]]
 
     
