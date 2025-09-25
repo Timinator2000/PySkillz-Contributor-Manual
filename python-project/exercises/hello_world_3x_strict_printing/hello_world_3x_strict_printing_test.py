@@ -23,28 +23,20 @@ except ImportError:
 ###############################################################################################################
 
 
-success_message = """
-
-
-"""
-
-success_message += ''
-success_message += ''
-success_message += ''
-
-
-class HelloWorld3X(pyskillz_tools.PrintBasedExercise):
+class HelloWorld3XStrictPrinting(pyskillz_tools.PrintBasedExercise):
     
     def __init__(self):
 
-        super().__init__(__file__, success_message)
+        super().__init__(__file__)
         self.fixed_test_cases = [[]]
 
+        self.strict_printing = True
+
     
-    def test_case_to_string(self) -> str:
-        return "There are test cases for this exercise. You just need to print 'Hello, World!' 3 times."
-    
+    def test_case_to_string(self, test_case) -> str:
+        return 'There are no test cases for this exercise. You just need to print \'Hello, World!\' 3 times.'
+
 
 if __name__ == "__main__":
-    exercise = HelloWorld3X()
+    exercise = HelloWorld3XStrictPrinting()
     exercise.run()

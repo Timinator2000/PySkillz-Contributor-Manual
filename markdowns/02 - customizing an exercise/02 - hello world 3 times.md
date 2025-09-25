@@ -16,7 +16,7 @@ Even a simple task like this can be solved in many different ways. Let’s look 
 
 * **Number of Calls to `print`** (during execution)
 
-* **Lines of Code** (counting the function header and logical lines, but skipping blank lines)
+* **Lines of Code** (counting the function header and code lines, but skipping blank lines)
 
 * **Statements** (Python statements, including function definitions)
 

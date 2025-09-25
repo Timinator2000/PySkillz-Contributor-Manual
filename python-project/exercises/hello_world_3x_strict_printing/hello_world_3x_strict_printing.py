@@ -1,4 +1,4 @@
-def hello_world_3x() -> None:
+def hello_world_3x_strict_printing() -> None:
     # Your code goes here.
     
     # Write an answer using print
