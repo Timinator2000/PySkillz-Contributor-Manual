@@ -8,10 +8,8 @@ class HelloWorld3XStrictPrinting(pyskillz_tools.PrintBasedExercise):
         super().__init__(__file__)
         self.fixed_test_cases = [[]]
 
-        self.strict_printing = True
+        self.strict_print_usage = True
 ```
-
-
 
 
 Use a multi-line string to print the following text:
