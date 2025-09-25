@@ -74,7 +74,7 @@ def hello_word_3_times():
 
 * **Calls to `print`:** 3
 * **Lines of code:** 5
-* **Statements:** 4 (function definition, `i=0`, `while`, `print`, `i+=1`)
+* **Statements:** 5 (function definition, `i=0`, `while`, `print`, `i+=1`)
 
 # Joining a list
 
