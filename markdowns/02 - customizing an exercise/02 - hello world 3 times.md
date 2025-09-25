@@ -10,7 +10,7 @@ Hello, World!
 Hello, World!
 ```
 
-@[How many solutions can you find?]({"stubs": ["exercises/hello_world_3x/hello_world_3x.py"], "command": "python3 exercises/hello_world_3x/hello_world_3x_test.py"})
+@[How many different solutions can you code?]({"stubs": ["exercises/hello_world_3x/hello_world_3x.py"], "command": "python3 exercises/hello_world_3x/hello_world_3x_test.py"})
 
 Even a simple task like this can be solved in many different ways. Let’s look at several valid approaches. For each solution, we’ll analyze: 
 
@@ -102,10 +102,18 @@ def hello_world_3x(n=3):
 * **Lines of code:** 4
 * **Statements:** 4 (`hello_world_3x()`, `if`, `print`, recursive call)
 
----
+# Summary
 
-Even for a simple exercise, the variety of valid solutions shows how options like `strict_print_usage`, `max_lines_of_code` and `max_statement_count` could limit the number of accepted soltuions. These options can help you guide learners toward the style of solution you want to encourage.
+Even for a simple exercise, the variety of valid solutions shows how options like `strict_print_usage`, `max_lines_of_code` and `max_statement_count` could limit the number of accepted soltuions. These options can help you guide learners toward the style of solution you want to encourage. Let's put the results in a table and then take a look at ways to limit the number of correct solutions.
 
+| | Technique | Calls to Print | Lines of Code | Python Statements |
+|:--:|:-----------------:|:---:|:---:|:---:|
+| 1️⃣ | Three Direct Print Calls | 3 | 4 | 4 |
+| 2️⃣ | Multi-Line String | 1 | 7 | 3 |
+| 3️⃣ | Using a `for` Loop | 3 | 3 | 3 |
+| 4️⃣ | Using a `while` Loop | 3 | 5 | 5 |
+| 5️⃣ | Joining a List | 1 | 2 | 2 |
+| 6️⃣ | Recursion | 3 | 4 | 4 |
 
 
 
