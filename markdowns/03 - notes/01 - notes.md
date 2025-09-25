@@ -6,7 +6,7 @@ In "Hello, World!", I was using double quotes inside a Python string surrounded 
 
 * Left double quote: `“` (U+201C)
 
-* Right double quote: `”` (U+201D) |
+* Right double quote: `”` (U+201D)
 
 
 <BR>
