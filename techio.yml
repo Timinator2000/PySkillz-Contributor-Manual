@@ -31,8 +31,8 @@ plan:
         statement: markdowns/02 - customizing an exercise/01 - the options.md
       - title: Hello World 3 Times
         statement: markdowns/02 - customizing an exercise/02 - hello world 3 times.md
-      - title: Strict Printing
-        statement: markdowns/02 - customizing an exercise/03 - strict printing.md
+      - title: Strict Print Usage
+        statement: markdowns/02 - customizing an exercise/03 - strict print usage.md
         
   - title: Notes
     plan:
