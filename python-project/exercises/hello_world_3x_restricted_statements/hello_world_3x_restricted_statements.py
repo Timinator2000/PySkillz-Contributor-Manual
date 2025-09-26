@@ -1,5 +1,5 @@
 def hello_world_3x_restricted_statements() -> None:
-    x = 3
+    x = 3 + 6
     print('\n'.join(['Hello, World!', 'Hello, World!', 'Hello, World!']))
 
     # Your code goes here.
