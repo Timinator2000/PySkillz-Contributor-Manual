@@ -433,14 +433,32 @@ class Exercise(TechioInteraction):
             self.fail()
             self.display_first_failed_test_case()
             return
+        
+        error_msg = ''
+        learner_loc = self.code_analysis['effective_code_lines']
+        if learner_loc > self.max_lines_of_code:
+            learner_loc_string = f'{learner_loc} line' + ('s' if learner_loc > 1 else '')
+            max_loc_string = f'{self.max_lines_of_code} line' + ('s' if self.max_lines_of_code > 1 else '')
+            error_msg = f'Your code has {learner_loc_string} of code. To successsfully pass this exercise, '
+            error_msg += f'your code must be no more than {max_loc_string} of code.'
+
+        if not error_msg:
+            learner_statement_count = self.code_analysis['total_count']
+            if learner_statement_count > self.max_statement_count:
+                learner_statement_count_string = f'{learner_statement_count} Python statement' + ('s' if learner_statement_count > 1 else '')
+                max_statement_count_string = f'{self.max_statement_count} Python statement' + ('s' if self.max_statement_count > 1 else '')
+                error_msg = f'Your code has {learner_statement_count_string}. To successsfully pass this exercise, '
+                error_msg += f'your code must use no more than {max_statement_count_string}.'
                 
-        error_msg = self.check_additonal_solution_criteria()
+        if not error_msg:
+            error_msg = self.check_additonal_solution_criteria()
+
         if error_msg:
             self.fail()
 
             msg = 'You have passed all test cases. However, your '
             msg += 'code does not meet all the required criteria.\n\n' + error_msg
-            self.send_multiline_text(self.success_channel, msg)
+            self.send_multiline_text(self.bug_channel, msg)
             return
 
         self.success()

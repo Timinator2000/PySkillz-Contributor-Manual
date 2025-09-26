@@ -1,6 +1,6 @@
 # Restricted Lines of Code
 
-The same could be accomplished by limiting accepted soltuions to 2 lines of code like this...
+Let's restric the user to 1 line of code:
 
 ```python
 class HelloWorld3XRestrictedLOC(pyskillz_tools.PrintBasedExercise):
@@ -10,7 +10,7 @@ class HelloWorld3XRestrictedLOC(pyskillz_tools.PrintBasedExercise):
         super().__init__(__file__)
         self.fixed_test_cases = [[]]
 
-        self.max_lines_of_code = 2
+        self.max_lines_of_code = 1
 ```
 
 
