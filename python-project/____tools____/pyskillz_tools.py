@@ -1,4 +1,4 @@
-# Last Edited: Sept 25, 2025 5:56am
+# Last Edited: Sept 26, 2025 7:49am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -291,6 +291,10 @@ class Exercise(TechioInteraction):
             self.suggested_solution_text = f.read()
 
 
+    def pluralize(self, count: int, label: str) -> str:
+        return f'{count} {label}' + ('s' if count != 1 else '')
+    
+
     def container_element_types(self, container) -> str:
         element_types = {self.data_type(element) for element in container}
         
@@ -437,16 +441,16 @@ class Exercise(TechioInteraction):
         error_msg = ''
         learner_loc = self.code_analysis['effective_code_lines']
         if learner_loc > self.max_lines_of_code:
-            learner_loc_string = f'{learner_loc} line' + ('s' if learner_loc > 1 else '')
-            max_loc_string = f'{self.max_lines_of_code} line' + ('s' if self.max_lines_of_code > 1 else '')
+            learner_loc_string = self.pluralize(learner_loc, 'line')
+            max_loc_string = self.pluralize(self.max_lines_of_code, 'line')
             error_msg = f'Your code has {learner_loc_string} of code. To successsfully pass this exercise, '
             error_msg += f'your code must be no more than {max_loc_string} of code.'
 
         if not error_msg:
             learner_statement_count = self.code_analysis['total_count']
             if learner_statement_count > self.max_statement_count:
-                learner_statement_count_string = f'{learner_statement_count} Python statement' + ('s' if learner_statement_count > 1 else '')
-                max_statement_count_string = f'{self.max_statement_count} Python statement' + ('s' if self.max_statement_count > 1 else '')
+                learner_statement_count_string = self.pluralize(learner_statement_count, 'Python statement')
+                max_statement_count_string = self.pluralize(self.max_statement_count, 'Python statement')
                 error_msg = f'Your code has {learner_statement_count_string}. To successsfully pass this exercise, '
                 error_msg += f'your code must use no more than {max_statement_count_string}.'
                 
@@ -565,8 +569,8 @@ class PrintBasedExercise(Exercise):
         num_user_lines = len(user_answer)
         verb = 'was' if num_expected_lines == 1 else 'were'
 
-        expected_lines_str = f'{num_expected_lines} line' + ('s' if num_expected_lines != 1 else '')
-        user_lines_str = f'{num_user_lines} line' + ('s' if num_user_lines != 1 else '')
+        expected_lines_str = self.pluralize(num_expected_lines, 'line')
+        user_lines_str = self.pluralize(num_user_lines, 'line')
 
         msg = ''
         if num_user_calls_to_print > 0 and self.strict_print_usage and num_expected_calls_to_print != num_user_calls_to_print:
