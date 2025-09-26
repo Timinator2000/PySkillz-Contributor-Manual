@@ -35,6 +35,8 @@ plan:
         statement: markdowns/02 - customizing an exercise/03 - strict print usage.md
       - title: Restricting Lines of Code
         statement: markdowns/02 - customizing an exercise/04 - restricting loc.md
+      - title: Restricting Python Statement Count
+        statement: markdowns/02 - customizing an exercise/05 - restricting statements.md
         
   - title: Notes
     plan:
