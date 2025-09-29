@@ -12,7 +12,7 @@ class HelloWorld3XStrictPrintUsage(pyskillz_tools.PrintBasedExercise):
 ```
 
 
-Use a multi-line string to print the following text:
+Use a multi-line string or another technique to print the following text with only 1 call to `print`:
 
 ```text
 Hello, World!
@@ -28,13 +28,13 @@ Write your own solution or try any one of the solutions provided earlier
 
 1️⃣ ❌ Three Direct Print Calls
 
-2️⃣ ❌ Multi-Line String
+2️⃣ ✅ Multi-Line String
 
 3️⃣ ❌ Using a `for` Loop
 
 4️⃣ ❌ Using a `while` Loop
 
-5️⃣ ❌ Joining a List
+5️⃣ ✅ Joining a List
 
 6️⃣ ✅ One-Liner with String Multiplication
 

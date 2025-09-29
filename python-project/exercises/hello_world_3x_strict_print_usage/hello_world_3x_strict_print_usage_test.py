@@ -37,6 +37,15 @@ class HelloWorld3XStrictPrintUsage(pyskillz_tools.PrintBasedExercise):
         return 'There are no test cases for this exercise. You just need to print \'Hello, World!\' 3 times.'
 
 
+    def display_success_message(self):
+        stats_channel = pyskillz_tools.Channel(f'Lines of Code and Python Statements #️⃣', 'LOC#️⃣>')
+        self.send_multiline_text(stats_channel, self.get_code_analysis('basic_stats'))
+
+
+    def display_solution(self):
+        return
+
+
 if __name__ == "__main__":
     exercise = HelloWorld3XStrictPrintUsage()
     exercise.run()
