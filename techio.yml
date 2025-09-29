@@ -37,6 +37,8 @@ plan:
         statement: markdowns/02 - customizing an exercise/04 - restricting loc.md
       - title: Restricting Python Statement Count
         statement: markdowns/02 - customizing an exercise/05 - restricting statements.md
+      - title: Requiring Certain Code Features
+        statement: markdowns/02 - customizing an exercise/06 - requiring code features.md
         
   - title: Notes
     plan:

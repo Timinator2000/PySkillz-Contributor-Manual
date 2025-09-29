@@ -12,7 +12,7 @@ class HelloWorld3XStrictPrintUsage(pyskillz_tools.PrintBasedExercise):
 ```
 
 
-Use a multi-line string or another technique to print the following text with only 1 call to `print`:
+Use a multi-line string or another technique to print the following text with **only 1 call to `print`**:
 
 ```text
 Hello, World!

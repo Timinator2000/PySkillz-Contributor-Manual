@@ -13,7 +13,7 @@ class HelloWorld3XRestrictedStatements(pyskillz_tools.PrintBasedExercise):
 ```
 
 
-Print the following text using no more than 2 Python statements.
+Print the following text using **no more than 2 Python statements**.
 
 ```text
 Hello, World!

@@ -14,7 +14,7 @@ class HelloWorld3XRestrictedLOC(pyskillz_tools.PrintBasedExercise):
 ```
 
 
-Print the following text using only 1 line of code.
+Print the following text using **only 1 line of code**.
 
 ```text
 Hello, World!
