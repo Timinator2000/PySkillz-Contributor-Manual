@@ -27,3 +27,18 @@ Write your own solution or try any one of the solutions provided earlier
 @[Only one line of code...]({"stubs": ["exercises/hello_world_3x_restricted_loc/hello_world_3x_restricted_loc.py"], "command": "python3 exercises/hello_world_3x_restricted_loc/hello_world_3x_restricted_loc_test.py"})
 
 
+# Results
+
+1️⃣ Three Direct Print Calls
+
+2️⃣ Multi-Line String
+
+3️⃣ Using a `for` Loop
+
+4️⃣ Using a `while` Loop
+
+5️⃣ ✅ Joining a List
+
+6️⃣ One-Liner with String Multiplication
+
+7️⃣ Recursion

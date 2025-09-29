@@ -1,4 +1,4 @@
-# Last Edited: Sept 29, 2025 6:21am
+# Last Edited: Sept 29, 2025 10:03am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -443,16 +443,16 @@ class Exercise(TechioInteraction):
         if learner_loc > self.max_lines_of_code:
             learner_loc_string = self.pluralize(learner_loc, 'line')
             max_loc_string = self.pluralize(self.max_lines_of_code, 'line')
-            error_msg = f'Your code has {learner_loc_string} of code. To successsfully pass this exercise, '
-            error_msg += f'your code must be no more than {max_loc_string} of code.'
+            error_msg = f'Your solution has {learner_loc_string} of code. To successsfully pass this exercise, '
+            error_msg += f'your solution must be no more than {max_loc_string} of code.'
 
         if not error_msg:
             learner_statement_count = self.code_analysis['total_count']
             if learner_statement_count > self.max_statement_count:
                 learner_statement_count_string = self.pluralize(learner_statement_count, 'Python statement')
                 max_statement_count_string = self.pluralize(self.max_statement_count, 'Python statement')
-                error_msg = f'Your code has {learner_statement_count_string}. To successsfully pass this exercise, '
-                error_msg += f'your code must use no more than {max_statement_count_string}.'
+                error_msg = f'Your solution has {learner_statement_count_string}. To successsfully pass this exercise, '
+                error_msg += f'your solution must use no more than {max_statement_count_string}.'
                 
         if not error_msg:
             error_msg = self.check_additonal_solution_criteria()
@@ -461,7 +461,7 @@ class Exercise(TechioInteraction):
             self.fail()
 
             msg = 'You have passed all test cases. However, your '
-            msg += 'code does not meet all the required criteria.\n\n' + error_msg
+            msg += 'solution does not meet all the required criteria.\n\n' + error_msg
             self.send_multiline_text(self.bug_channel, msg)
             return
 
@@ -583,7 +583,7 @@ class PrintBasedExercise(Exercise):
             
             if expected_answer_string == user_answer_string:
                 msg += 'The text you output is correct. However...\n'
-            msg += f"Your code called 'print' {num_user_calls_to_print} {word_user}. "
+            msg += f"Your solution called 'print' {num_user_calls_to_print} {word_user}. "
             msg += f"The grader called 'print' {num_expected_calls_to_print} {word_expected}.\n"
 
         if num_user_lines == 0:

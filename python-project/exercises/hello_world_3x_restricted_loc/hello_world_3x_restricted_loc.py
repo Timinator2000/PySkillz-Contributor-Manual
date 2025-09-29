@@ -49,9 +49,9 @@ def hello_world_3x_restricted_loc() -> None:
 #     print("\n".join(["Hello, World!"] * 3))
 
 
-# One-Liner with String Multiplication
+# 6️⃣ One-Liner with String Multiplication
 
-# 6️⃣ def hello_world_3x_restricted_loc(): print(("Hello, World!\n" * 3)[:-1])
+# def hello_world_3x_restricted_loc(): print(("Hello, World!\n" * 3)[:-1])
 
 
 # 7️⃣ Recursion
