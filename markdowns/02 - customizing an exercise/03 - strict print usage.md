@@ -23,3 +23,19 @@ Hello, World!
 Write your own solution or try any one of the solutions provided earlier
 
 @[To pass successfully, you must only call print one time!]({"stubs": ["exercises/hello_world_3x_strict_print_usage/hello_world_3x_strict_print_usage.py"], "command": "python3 exercises/hello_world_3x_strict_print_usage/hello_world_3x_strict_print_usage_test.py"})
+
+# Results
+
+1️⃣ ❌ Three Direct Print Calls
+
+2️⃣ ❌ Multi-Line String
+
+3️⃣ ❌ Using a `for` Loop
+
+4️⃣ ❌ Using a `while` Loop
+
+5️⃣ ❌ Joining a List
+
+6️⃣ ✅ One-Liner with String Multiplication
+
+7️⃣ ❌ Recursion

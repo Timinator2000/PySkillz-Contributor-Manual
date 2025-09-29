@@ -14,7 +14,7 @@ class HelloWorld3XRestrictedLOC(pyskillz_tools.PrintBasedExercise):
 ```
 
 
-Print the following text using 2 lines of code or less.
+Print the following text using only 1 line of code.
 
 ```text
 Hello, World!
@@ -29,16 +29,16 @@ Write your own solution or try any one of the solutions provided earlier
 
 # Results
 
-1️⃣ Three Direct Print Calls
+1️⃣ ❌ Three Direct Print Calls
 
-2️⃣ Multi-Line String
+2️⃣ ❌ Multi-Line String
 
-3️⃣ Using a `for` Loop
+3️⃣ ❌ Using a `for` Loop
 
-4️⃣ Using a `while` Loop
+4️⃣ ❌ Using a `while` Loop
 
-5️⃣ ✅ Joining a List
+5️⃣ ❌ Joining a List
 
-6️⃣ One-Liner with String Multiplication
+6️⃣ ✅ One-Liner with String Multiplication
 
-7️⃣ Recursion
+7️⃣ ❌ Recursion
