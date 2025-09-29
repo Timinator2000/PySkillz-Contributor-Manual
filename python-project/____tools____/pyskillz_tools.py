@@ -1,4 +1,4 @@
-# Last Edited: Sept 26, 2025 7:49am
+# Last Edited: Sept 29, 2025 6:21am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -507,6 +507,10 @@ class IOLog:
         self.events.append(IOEvent(_type, text, line_count))
 
 
+    def num_lines_printed(self):
+        return sum(event.line_count for event in self.events if event.type == 'print')
+
+
     def full_output(self):
         string = ''.join([event.text for event in self.events if event.type == 'print'])
         if string and string[-1] == '\n':
@@ -565,8 +569,8 @@ class PrintBasedExercise(Exercise):
         expected_answer = [] if not expected_answer_string else expected_answer_string.split('\n')
         user_answer = [] if not user_answer_string else user_answer_string.split('\n')
 
-        num_expected_lines = len(expected_answer)
-        num_user_lines = len(user_answer)
+        num_expected_lines = expected_io_log.num_lines_printed()
+        num_user_lines = user_io_log.num_lines_printed()
         verb = 'was' if num_expected_lines == 1 else 'were'
 
         expected_lines_str = self.pluralize(num_expected_lines, 'line')
@@ -584,6 +588,9 @@ class PrintBasedExercise(Exercise):
 
         if num_user_lines == 0:
             msg += f'You did not print anything. {expected_lines_str} of printed output {verb} expected.\n'
+
+        elif num_expected_lines == 0:
+            msg += f'No lines of printed output were expected. You printed {user_lines_str}.\n'
 
         elif expected_answer != user_answer:
             msg += ('\n' if msg else '') + 'First Failed Test Case:\n\n'
