@@ -21,6 +21,8 @@ Hello, World!
 Hello, World!
 ```
 
+Write your own solution or try any one of the solutions provided earlier
+
 @[Only two Python statements...]({"stubs": ["exercises/hello_world_3x_restricted_statements/hello_world_3x_restricted_statements.py"], "command": "python3 exercises/hello_world_3x_restricted_statements/hello_world_3x_restricted_statements_test.py"})
 
 

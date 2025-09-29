@@ -89,6 +89,17 @@ def hello_world_3x() -> None:
 * **Lines of code:** 2
 * **Statements:** 2 (`hello_world_3x()`, `print`)
 
+
+# One-Liner with String Multiplication
+
+```python
+def hello_world_3x(): print(("Hello, World!\n" * 3)[:-1])
+```
+
+* **Calls to `print`:** 1
+* **Lines of code:** 1
+* **Statements:** 2 (`hello_world_3x()`, `print`)
+
 # Recursion
 
 ```python
@@ -113,7 +124,8 @@ Even for a simple exercise, the variety of valid solutions shows how options lik
 | 3️⃣ | Using a `for` Loop | 3 | 3 | 3 |
 | 4️⃣ | Using a `while` Loop | 3 | 5 | 5 |
 | 5️⃣ | Joining a List | 1 | 2 | 2 |
-| 6️⃣ | Recursion | 3 | 4 | 4 |
+| 6️⃣ | One-Liner with String Multiplication | 1 | 1 | 2 |
+| 7️⃣ | Recursion | 3 | 4 | 4 |
 
 <BR>
 
