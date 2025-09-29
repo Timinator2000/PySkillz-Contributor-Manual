@@ -578,13 +578,13 @@ class PrintBasedExercise(Exercise):
 
         msg = ''
         if num_user_calls_to_print > 0 and self.strict_print_usage and num_expected_calls_to_print != num_user_calls_to_print:
-            word_expected = 'time' if num_expected_calls_to_print == 1 else 'times'
-            word_user = 'time' if num_user_calls_to_print == 1 else 'times'
+            expected_times_str = self.pluralize(num_expected_calls_to_print, 'time')
+            learner_times_str = self.pluralize(num_user_calls_to_print, 'time')
             
             if expected_answer_string == user_answer_string:
-                msg += 'The text you output is correct. However...\n'
-            msg += f"Your solution called 'print' {num_user_calls_to_print} {word_user}. "
-            msg += f"The grader called 'print' {num_expected_calls_to_print} {word_expected}.\n"
+                msg += 'The text you output is correct. However...\n\n'
+            msg += f"Your solution called 'print' {learner_times_str}. "
+            msg += f"The grader called 'print' {expected_times_str}.\n"
 
         if num_user_lines == 0:
             msg += f'You did not print anything. {expected_lines_str} of printed output {verb} expected.\n'
