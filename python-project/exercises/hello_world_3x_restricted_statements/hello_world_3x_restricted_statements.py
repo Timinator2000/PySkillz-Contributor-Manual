@@ -53,7 +53,12 @@ def hello_world_3x_restricted_statements() -> None:
 # def hello_world_3x_restricted_statements(): print(("Hello, World!\n" * 3)[:-1])
 
 
-# 7️⃣ Recursion
+# 7️⃣ One-Liner with 3 Print Statements
+
+# def hello_world_3x_restricted_statements() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
+
+
+# 8️⃣ Recursion
 
 # def hello_world_3x_restricted_statements(n=3) -> None:
 #     if n > 0:

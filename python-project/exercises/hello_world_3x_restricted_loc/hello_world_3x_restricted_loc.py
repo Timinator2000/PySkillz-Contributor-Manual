@@ -54,7 +54,12 @@ def hello_world_3x_restricted_loc() -> None:
 # def hello_world_3x_restricted_loc(): print(("Hello, World!\n" * 3)[:-1])
 
 
-# 7️⃣ Recursion
+# 7️⃣ One-Liner with 3 Print Statements
+
+# def hello_world_3x_restricted_loc() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
+
+
+# 8️⃣ Recursion
 
 # def hello_world_3x_restricted_loc(n=3) -> None:
 #     if n > 0:

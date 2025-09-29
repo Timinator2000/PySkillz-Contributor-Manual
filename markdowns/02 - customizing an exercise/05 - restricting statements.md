@@ -40,4 +40,6 @@ Write your own solution or try any one of the solutions provided earlier
 
 6️⃣ ✅ One-Liner with String Multiplication
 
-7️⃣ ❌ Recursion
+7️⃣ ❌ One-Liner with 3 Print Statements
+
+8️⃣ ❌ Recursion
