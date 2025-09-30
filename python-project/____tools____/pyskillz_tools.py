@@ -1,4 +1,4 @@
-# Last Edited: Sept 30, 2025 12:44pm
+# Last Edited: Sept 30, 2025 1:52pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -270,6 +270,7 @@ class Exercise(TechioInteraction):
         self.num_random_test_cases = 0
         self.success_message = success_message.strip()
         self.first_failed_test_case = None
+        self.floating_point_precision = 2
 
         self.solution_channel = Channel('Suggested Solution ✅', 'Sol✅>')
 
@@ -377,16 +378,21 @@ class Exercise(TechioInteraction):
             
             
     def generate_answer(self, solution, test_case):
-        return solution(*deepcopy(test_case))
+        answer = solution(*deepcopy(test_case))
 
-                
+        if type(answer) == float:
+            answer = round(answer, self.floating_point_precision)
+
+        return answer
+
+
     def run_test_case(self, test_case):
         if Exercise.PRINT_TEST_CASES:
             print(f'{test_case=}')
 
         expected_answer = self.generate_answer(self.suggested_solution, test_case)
         user_answer = self.generate_answer(self.user_solution, test_case)
-            
+
         expected_answer_format = self.data_type(expected_answer)
         user_answer_format = self.data_type(user_answer)
 
