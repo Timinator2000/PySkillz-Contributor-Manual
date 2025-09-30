@@ -41,7 +41,7 @@ plan:
         statement: markdowns/02 - customizing an exercise/06 - requiring code features.md
       - title: Floating Point Precision
         statement: markdowns/02 - customizing an exercise/07 - floating-point precision.md
-      - title: Requiring Certain Code Features
+      - title: Test Case to String
         statement: markdowns/02 - customizing an exercise/08 - test case to string.md
         
   - title: Notes
