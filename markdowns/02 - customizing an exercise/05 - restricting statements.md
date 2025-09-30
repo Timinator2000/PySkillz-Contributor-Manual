@@ -1,6 +1,5 @@
 # Restricted Python Statement Count
 
-
 ```python
 class HelloWorld3XRestrictedStatements(pyskillz_tools.PrintBasedExercise):
     
@@ -11,7 +10,6 @@ class HelloWorld3XRestrictedStatements(pyskillz_tools.PrintBasedExercise):
 
         self.max_statement_count = 2
 ```
-
 
 Print the following text using **no more than 2 Python statements**.
 

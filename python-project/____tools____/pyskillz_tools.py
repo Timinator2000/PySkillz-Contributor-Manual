@@ -1,4 +1,4 @@
-# Last Edited: Sept 29, 2025 11:12am
+# Last Edited: Sept 30, 2025 12:44pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -403,7 +403,7 @@ class Exercise(TechioInteraction):
         return True
 
 
-    def check_additonal_solution_criteria(self):
+    def check_additional_solution_criteria(self):
         return ''
     
 
@@ -455,7 +455,7 @@ class Exercise(TechioInteraction):
                 error_msg += f'your solution must use no more than {max_statement_count_string}.'
                 
         if not error_msg:
-            error_msg = self.check_additonal_solution_criteria()
+            error_msg = self.check_additional_solution_criteria()
 
         if error_msg:
             self.fail()
