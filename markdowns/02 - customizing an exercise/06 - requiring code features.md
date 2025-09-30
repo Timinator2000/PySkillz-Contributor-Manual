@@ -85,10 +85,6 @@ class HelloWorld3XWithAWhileLoop(pyskillz_tools.PrintBasedExercise):
         self.fixed_test_cases = [[]]
 
     
-    def test_case_to_string(self, test_case) -> str:
-        return 'There are no test cases for this exercise. You just need to print \'Hello, World!\' 3 times.'
-
-
     def check_additional_solution_criteria(self):
         tree = self.code_analysis['tree']
 
