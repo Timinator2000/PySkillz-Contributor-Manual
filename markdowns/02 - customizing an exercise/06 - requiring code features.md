@@ -97,7 +97,7 @@ class HelloWorld3XWithAWhileLoop(pyskillz_tools.PrintBasedExercise):
 
 Write your own solution or try any one of the solutions provided earlierl
 
-@[Hello World 3 Times with a `while` Loop.]({"stubs": ["exercises/hello_world_3x_with_a_while_loop/hello_world_3x_with_a_while_loop.py"], "command": "python3 exercises/hello_world_3x_with_a_while_loop/hello_world_3x_with_a_while_loop.py"})
+@[Hello World 3 Times with a `while` Loop.]({"stubs": ["exercises/hello_world_3x_with_a_while_loop/hello_world_3x_with_a_while_loop.py"], "command": "python3 exercises/hello_world_3x_with_a_while_loop/hello_world_3x_with_a_while_loop_test.py"})
 
 
 # Results
