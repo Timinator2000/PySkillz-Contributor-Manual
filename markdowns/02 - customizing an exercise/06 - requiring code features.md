@@ -31,7 +31,7 @@ All `Exercise`s are ultimately subclasses of `TechioObject`. A `TechioObject` ob
 |     `'comment_lines'`    | Number of comment lines                                             |
 | `'effective_code_lines'` | Lines of code excluding comments: `non_blank_lines - comment_lines` |
 
-You can use any of this information to determine whether the learner has met your exercise objectives. However, the **AST** is often the most powerful tool for writing meaningful checks.
+You can use any of this information to determine whether the learner has met your exercise objectives. However, **the Abstract Syntax Tree (AST) is often the most powerful tool** for writing meaningful checks.
 
 To access it:
 
