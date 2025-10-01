@@ -27,3 +27,9 @@ class CalculateCircleCircumferenceAndArea(pyskillz_tools.Exercise):
 ```
 
 This gives you full control over the precision of each element, ensuring that grading remains consistent even when multiple floating point values are involved.
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

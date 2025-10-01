@@ -35,3 +35,9 @@ def test_case_to_string(self, test_case) -> str:
 ```
 
 This customization makes the feedback clearer and more tailored to the problem you’re presenting.
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

@@ -117,3 +117,9 @@ Write your own solution or try any one of the solutions provided earlierl
 7️⃣ ❌ One-Liner with 3 Print Statements
 
 8️⃣ ❌ Recursion
+
+<BR>
+
+************
+
+[![PySkillz](../../graphics/PySkillzFooter.png)](skillz-catalog)

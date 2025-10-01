@@ -43,6 +43,8 @@ plan:
         statement: markdowns/02 - customizing an exercise/07 - floating-point precision.md
       - title: Test Case to String
         statement: markdowns/02 - customizing an exercise/08 - test case to string.md
+      - title: Customization Wrap-Up
+        statement: markdowns/02 - customizing an exercise/09 - customization wrap-up.md
         
   - title: Notes
     plan:
