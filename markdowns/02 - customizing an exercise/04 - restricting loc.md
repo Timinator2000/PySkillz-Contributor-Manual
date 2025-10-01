@@ -1,6 +1,9 @@
 # Restricted Lines of Code
 
-Let's restric the user to 1 line of code:
+When you want to **limit the number of lines** a learner can write, use the `max_lines_of_code` attribute. This can be useful for encouraging concise solutions, discouraging unnecessary boilerplate, or guiding learners toward specific patterns.
+
+To enable this restriction, set the `max_lines_of_code` attribute to the maximum number of allowed lines in your subclass constructor, as shown below.
+
 
 ```python
 class HelloWorld3XRestrictedLOC(pyskillz_tools.PrintBasedExercise):

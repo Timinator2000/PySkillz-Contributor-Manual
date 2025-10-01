@@ -1,5 +1,12 @@
 # Strict Print Usage
 
+When *strict print usage* is required, the learner’s solution must call `print` exactly the same number of times as the grader. This ensures that learners follow the intended output structure rather than merging multiple outputs or adding extras.
+
+The simplest case is when the grader uses a single `print` statement, but you can also use this feature to enforce more complex output patterns.
+
+To enable this behavior in your exercise, set the `strict_print_usage` attribute to `True` in your subclass constructor, as shown below.
+
+
 ```python
 class HelloWorld3XStrictPrintUsage(pyskillz_tools.PrintBasedExercise):
     
@@ -10,7 +17,6 @@ class HelloWorld3XStrictPrintUsage(pyskillz_tools.PrintBasedExercise):
 
         self.strict_print_usage = True
 ```
-
 
 Use a multi-line string or another technique to print the following text with **only 1 call to `print`**:
 

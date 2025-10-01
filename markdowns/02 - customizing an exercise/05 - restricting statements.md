@@ -1,5 +1,9 @@
 # Restricted Python Statement Count
 
+To **restrict the number of Python statements** in a learner’s solution, use the `max_statement_count` attribute. This is useful when you want to keep solutions focused, prevent overly complex approaches, or encourage learners to combine operations efficiently.
+
+To enable this restriction, set the `max_statement_count` attribute to the maximum number of allowed statements in your subclass constructor, as shown below.
+
 ```python
 class HelloWorld3XRestrictedStatements(pyskillz_tools.PrintBasedExercise):
     
