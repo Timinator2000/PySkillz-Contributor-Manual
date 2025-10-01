@@ -20,6 +20,10 @@ Even a simple task like this can be solved in many different ways. Let’s look 
 
 * **Statements** (Python statements, including function definitions)
 
+> For a more detailed discussion of how PySkillz counts lines of code and Python statements, see [Appendix A - Counting Lines of Code]() on the main PySkillz playground.
+
+**LINK NEEDED**
+
 # Three Direct Print Calls
 
 ```python
@@ -100,6 +104,12 @@ def hello_world_3x(): print(("Hello, World!\n" * 3)[:-1])
 * **Lines of code:** 1
 * **Statements:** 2 (`hello_world_3x()`, `print`)
 
+# One-Liner with 3 Print Statements
+
+```python
+def hello_world_3x_with_a_while_loop() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
+```
+
 # Recursion
 
 ```python
@@ -125,7 +135,8 @@ Even for a simple exercise, the variety of valid solutions shows how options lik
 | 4️⃣ | Using a `while` Loop | 3 | 5 | 5 |
 | 5️⃣ | Joining a List | 1 | 2 | 2 |
 | 6️⃣ | One-Liner with String Multiplication | 1 | 1 | 2 |
-| 7️⃣ | Recursion | 3 | 4 | 4 |
+| 7️⃣ | One-Liner with 3 Print Statements | 3 | 1 | 4 |
+| 8️⃣ | Recursion | 3 | 4 | 4 |
 
 <BR>
 
