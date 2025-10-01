@@ -20,7 +20,7 @@ Even a simple task like this can be solved in many different ways. Let’s look 
 
 * **Statements** (Python statements, including function definitions)
 
-> For a more detailed discussion of how PySkillz counts lines of code and Python statements, see [Appendix A - Counting Lines of Code]() on the main PySkillz playground.
+> 🤔 For a more detailed discussion of how PySkillz counts lines of code and Python statements, see [Appendix A - Counting Lines of Code]() on the main PySkillz playground.
 
 **LINK NEEDED**
 
