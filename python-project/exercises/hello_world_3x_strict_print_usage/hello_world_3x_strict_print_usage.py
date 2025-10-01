@@ -50,7 +50,7 @@ def hello_world_3x_strict_print_usage() -> None:
 
 # 6️⃣ One-Liner with String Multiplication
 
-# def hello_world_3x_strict_print_usage(): print(("Hello, World!\n" * 3)[:-1])
+# def hello_world_3x_strict_print_usage() -> None: print(("Hello, World!\n" * 3)[:-1])
 
 
 # 7️⃣ One-Liner with 3 Print Statements
