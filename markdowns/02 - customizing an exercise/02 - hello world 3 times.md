@@ -56,7 +56,7 @@ def hello_world_3x() -> None:
 * **Lines of code:** 7
 * **Statements:** 3 (`message = ...`, `hello_world_3x()`, `print(message)`)
 
-# Using a `for` Loop
+# 3️⃣ Using a `for` Loop
 
 ```python
 def hello_world_3x() -> None:
@@ -68,7 +68,7 @@ def hello_world_3x() -> None:
 * **Lines of code:** 3
 * **Statements:** 3 (`hello_world_3x()`, `for`, `print`)
 
-# Using a `while` Loop
+# 4️⃣ Using a `while` Loop
 
 ```python
 def hello_world_3x() -> None:
@@ -82,7 +82,7 @@ def hello_world_3x() -> None:
 * **Lines of code:** 5
 * **Statements:** 5 (`hello_world_3x()`, `i=0`, `while`, `print`, `i+=1`)
 
-# Joining a List
+# 5️⃣ Joining a List
 
 ```python
 def hello_world_3x() -> None:
@@ -94,7 +94,7 @@ def hello_world_3x() -> None:
 * **Statements:** 2 (`hello_world_3x()`, `print`)
 
 
-# One-Liner with String Multiplication
+# 6️⃣ One-Liner with String Multiplication
 
 ```python
 def hello_world_3x(): print(("Hello, World!\n" * 3)[:-1])
@@ -104,13 +104,13 @@ def hello_world_3x(): print(("Hello, World!\n" * 3)[:-1])
 * **Lines of code:** 1
 * **Statements:** 2 (`hello_world_3x()`, `print`)
 
-# One-Liner with 3 Print Statements
+# 7️⃣ One-Liner with 3 Print Statements
 
 ```python
 def hello_world_3x_with_a_while_loop() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
 ```
 
-# Recursion
+# 8️⃣ Recursion
 
 ```python
 def hello_world_3x(n=3) -> None:
