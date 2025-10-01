@@ -55,7 +55,7 @@ For example, to check whether the learner used a `for` loop:
             if isinstance(node, ast.For):
                 return ''
         
-        return "Your solution must include a for loop."
+        return 'Your solution must include a \'for\' loop.'
 ```
 
 Other useful node types include `ast.While`, `ast.FunctionDef`, `ast.Call`, `ast.If`, and `ast.Return`.
@@ -72,7 +72,7 @@ Hello, World!
 Hello, World!
 ```
 
-The following `Exercise` subclass enforces the use of a `while` loop:
+The following subclass enforces the use of a `while` loop:
 
 ```python
 import ast
