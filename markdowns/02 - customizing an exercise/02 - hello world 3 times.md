@@ -24,7 +24,7 @@ Even a simple task like this can be solved in many different ways. Let’s look 
 
 **LINK NEEDED**
 
-# Three Direct Print Calls
+# 1️⃣ Three Direct Print Calls
 
 ```python
 def hello_world_3x() -> None:
@@ -37,7 +37,7 @@ def hello_world_3x() -> None:
 * **Lines of code:** 4
 * **Statements:** 4 (`hello_world_3x()`, `print`, `print`, `print`)
 
-# Multi-Line String
+# 2️⃣ Multi-Line String
 
 ```python
 message = '''
