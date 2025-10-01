@@ -46,10 +46,15 @@ plan:
       - title: Customization Wrap-Up
         statement: markdowns/02 - customizing an exercise/09 - customization wrap-up.md
         
+  - title: Custom Playgrounds
+    plan:
+      - title: Creating Your Own Playground
+        statement: markdowns/03 - custom playgrounds/01 - custom playgrounds.md
+
   - title: Notes
     plan:
       - title: Notes for Contributors
-        statement: markdowns/03 - notes/01 - notes.md
+        statement: markdowns/04 - notes/01 - notes.md
 
 
 projects:
