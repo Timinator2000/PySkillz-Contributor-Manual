@@ -97,7 +97,7 @@ def hello_world_3x() -> None:
 # 6️⃣ One-Liner with String Multiplication
 
 ```python
-def hello_world_3x(): print(("Hello, World!\n" * 3)[:-1])
+def hello_world_3x() -> None: print(("Hello, World!\n" * 3)[:-1])
 ```
 
 * **Calls to `print`:** 1
@@ -107,7 +107,7 @@ def hello_world_3x(): print(("Hello, World!\n" * 3)[:-1])
 # 7️⃣ One-Liner with 3 Print Statements
 
 ```python
-def hello_world_3x_with_a_while_loop() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
+def hello_world_3x() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
 ```
 
 # 8️⃣ Recursion
