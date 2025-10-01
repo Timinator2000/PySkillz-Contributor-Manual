@@ -110,6 +110,10 @@ def hello_world_3x() -> None: print(("Hello, World!\n" * 3)[:-1])
 def hello_world_3x() -> None: print('Hello, World!'); print('Hello, World!'); print('Hello, World!')
 ```
 
+* **Calls to `print`:** 3
+* **Lines of code:** 1
+* **Statements:** 4 (`hello_world_3x()`, `print`, `print`, `print`)
+
 # 8️⃣ Recursion
 
 ```python
