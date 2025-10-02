@@ -1,4 +1,4 @@
-# Last Edited: Sept 30, 2025 1:52pm
+# Last Edited: Oct 2, 2025 5:10am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -698,6 +698,9 @@ class ExerciseTemplate():
                     if arg.annotation is None:
                         return f"Parameter '{arg.arg}' is missing a type annotation."
 
+                if node.name == 'exercise_name':
+                    return f"Your function cannot be named 'exercise_name'."
+
                 if node.args.vararg and node.args.vararg.annotation is None:
                     return f"Vararg parameter '*{node.args.vararg.arg}' is missing a type annotation."
 
@@ -708,9 +711,6 @@ class ExerciseTemplate():
                 if node.returns is None:
                     return f"Function '{node.name}' is missing a return type annotation."
                 
-                if node.name == 'exercise_name':
-                    return f"Your function cannot be named 'exercise_name'."
-
                 self.exercise_name = node.name
                 self.class_name = node.name.replace('_', ' ').title().replace(' ', '')
 
