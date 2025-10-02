@@ -15,7 +15,7 @@ Your override should return:
 
 # `code_analysis`: an Attribute of Every `TechioObject`
 
-All `Exercise`s are ultimately subclasses of `TechioObject`. A `TechioObject` object is created **only after** the learner clicks **Run** in a graded code block. During this instantiation, the learner’s code is analyzed and stored in `self.code_analysis`, a dictionary with several useful keys:
+All `Exercise`s are ultimately subclasses of `TechioObject`. A `TechioObject` instance is created **only after** the learner clicks **Run** in a graded code block. During this instantiation, the learner’s code is analyzed and stored in `self.code_analysis`, a dictionary with several useful keys:
 
 |            Key           | Meaning                                                             |
 | :----------------------: | :------------------------------------------------------------------ |

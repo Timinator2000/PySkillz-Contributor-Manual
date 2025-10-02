@@ -20,11 +20,11 @@ Most exercises will work fine without customization, but sometimes you need extr
 
 If the built-in options aren’t enough, your exercise subclass can override one or both of the following methods:
 
-* **`test_case_to_string`**
-  Determines how a test case is displayed to the learner. In most cases, the default behavior is sufficient — it lists each parameter with its value. Only override this if you need a custom presentation.
-
 * **`check_additional_solution_criteria`**
   Lets you add custom checks on the learner’s code beyond correctness and the built-in checks above. For instance, you could confirm that the solution includes at least one `for` loop, avoids certain functions, or uses recursion.
+
+* **`test_case_to_string`**
+  Determines how a test case is displayed to the learner. In most cases, the default behavior is sufficient — it lists each parameter with its value. Only override this if you need a custom presentation.
 
 # Next Steps
 

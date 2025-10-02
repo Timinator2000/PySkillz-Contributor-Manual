@@ -1,4 +1,4 @@
-# Step 5: The Python Files
+# The Python Files
 
 Every exercise requires three Python files:
 

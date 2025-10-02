@@ -1,4 +1,4 @@
-# Step 7: Submit Your Exercise to GitHub
+# Submit Your Exercise to GitHub
 
 Once your new exercise is complete and tested locally, the final step is to __push your changes to your fork on GitHub__ and open a __pull request__ to the main PySkillz repository.
 

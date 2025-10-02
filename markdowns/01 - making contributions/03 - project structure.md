@@ -1,4 +1,4 @@
-# Step 2: Explore the Project Structure
+# Explore the Project Structure
 
 Now that you’ve cloned the repository, let’s take a tour of the main folders and files you see:
 

@@ -1,4 +1,4 @@
-# Step 1: Set Up Your Local Workspace
+# Set Up Your Local Workspace
 
 Before you can contribute to PySkillz, you’ll need your own copy of the repository to work on. Here’s how:
 
