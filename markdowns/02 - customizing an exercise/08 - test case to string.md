@@ -1,6 +1,6 @@
 # Test Case to String
 
-When a learner’s solution fails, the **first failed test case** is displayed to help them debug their code. By default, test cases are shown in a simple parameter–value format, like this:
+When a learner’s solution fails, the **first failed test case** is displayed to help them debug their code. By default, test cases are shown in a simple **parameter = value** format, like this:
 
 ```text
 param_1 = 4
