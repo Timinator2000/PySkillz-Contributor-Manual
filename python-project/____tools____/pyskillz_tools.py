@@ -1,4 +1,4 @@
-# Last Edited: Oct 2, 2025 5:10am
+# Last Edited: Oct 4, 2025 7:15am
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -696,6 +696,9 @@ class ExerciseTemplate():
                 for arg in node.args.args + node.args.kwonlyargs:
                     if arg.arg in self.parameters:
                         return f'All parameter names must be unique. \'{arg.arg}\' appears more than once.'
+                    
+                    if arg.arg == node.name:
+                        return f'All parameter names must be different than the function name.'
                     
                     self.parameters.append(arg.arg)
                     if arg.annotation is None:
