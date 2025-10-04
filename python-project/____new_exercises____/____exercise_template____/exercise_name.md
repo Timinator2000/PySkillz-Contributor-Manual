@@ -18,10 +18,10 @@ Example
 {sample input}
 ```
 
-Expected Return Value: {or} Expected Ouput:
+Expected Return Value: {or} Expected Output:
 
 ```text
-{expected return value or ouput based on above input}
+{expected return value or output based on above input}
 ```
 
 Hints or tips (optional):

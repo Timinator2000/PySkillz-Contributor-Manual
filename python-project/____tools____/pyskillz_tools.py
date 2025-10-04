@@ -694,6 +694,9 @@ class ExerciseTemplate():
 
                 # Check parameters
                 for arg in node.args.args + node.args.kwonlyargs:
+                    if arg.arg in self.parameters:
+                        return f'All parameter names must be unique. {arg.arg} appears more than once.'
+                    
                     self.parameters.append(arg.arg)
                     if arg.annotation is None:
                         return f"Parameter '{arg.arg}' is missing a type annotation."

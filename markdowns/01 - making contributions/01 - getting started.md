@@ -1,4 +1,4 @@
-![PySkillz](../../graphics/PySkillzBanner.png)
+![PySkillz](../../graphics/PySkillzBanner-ContributorGuide.png)
 
 # Welcome to the PySkillz Contributor Guide 🎉
 
