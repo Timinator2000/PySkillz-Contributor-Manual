@@ -1,4 +1,4 @@
-# Last Edited: Oct 4, 2025 7:15am
+# Last Edited: Oct 4, 2025 1:44pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -274,9 +274,9 @@ class Exercise(TechioInteraction):
 
         self.solution_channel = Channel('Suggested Solution ✅', 'Sol✅>')
 
-        # Import the user solution from exercise_name.py
+        # Import the learner solution from exercise_name.py
         module = importlib.import_module(self.exercise_name)
-        self.user_solution = getattr(module, self.exercise_name)
+        self.learner_solution = getattr(module, self.exercise_name)
 
         # Import the suggested solution from exercise_name_solution.py
         module = importlib.import_module(self.exercise_name + '_solution')
@@ -356,12 +356,12 @@ class Exercise(TechioInteraction):
 
     def display_first_failed_test_case(self):
         expected_answer = self.generate_answer(self.suggested_solution, self.first_failed_test_case)
-        user_answer = self.generate_answer(self.user_solution, self.first_failed_test_case)
+        learner_answer = self.generate_answer(self.learner_solution, self.first_failed_test_case)
             
         expected_answer_format = self.data_type(expected_answer)
-        user_answer_format = self.data_type(user_answer)
+        learner_answer_format = self.data_type(learner_answer)
 
-        if expected_answer != user_answer:
+        if expected_answer != learner_answer:
         
             self.send_msg(self.bug_channel, 'First Failed Test Case:')
             self.send_msg(self.bug_channel, '')
@@ -370,10 +370,10 @@ class Exercise(TechioInteraction):
             self.display_test_case(self.first_failed_test_case)
             self.send_msg(self.bug_channel, '')
             self.send_msg(self.bug_channel, f'Expected answer = {expected_answer}')
-            self.send_msg(self.bug_channel, f'Your answer     = {user_answer}')
+            self.send_msg(self.bug_channel, f'Your answer     = {learner_answer}')
             self.send_msg(self.bug_channel, '')
             self.send_msg(self.bug_channel, f'Expected answer format = {expected_answer_format}')
-            self.send_msg(self.bug_channel, f'Your answer format     = {user_answer_format}')
+            self.send_msg(self.bug_channel, f'Your answer format     = {learner_answer_format}')
             self.send_msg(self.bug_channel, '')
             
             
@@ -391,17 +391,17 @@ class Exercise(TechioInteraction):
             print(f'{test_case=}')
 
         expected_answer = self.generate_answer(self.suggested_solution, test_case)
-        user_answer = self.generate_answer(self.user_solution, test_case)
+        learner_answer = self.generate_answer(self.learner_solution, test_case)
 
         expected_answer_format = self.data_type(expected_answer)
-        user_answer_format = self.data_type(user_answer)
+        learner_answer_format = self.data_type(learner_answer)
 
-        if expected_answer_format != user_answer_format:
+        if expected_answer_format != learner_answer_format:
             if not self.first_failed_test_case:
                 self.first_failed_test_case = test_case
             return False
 
-        if expected_answer != user_answer:
+        if expected_answer != learner_answer:
             if not self.first_failed_test_case:
                 self.first_failed_test_case = test_case
             return False
@@ -429,7 +429,8 @@ class Exercise(TechioInteraction):
             if self.run_test_case(test_case):
                 count += 1
 
-        self.send_msg(self.std_out_channel, f'{count} of {len(self.fixed_test_cases)} fixed test cases solved correctly.')
+        text = self.pluralize(len(self.fixed_test_cases), 'fixed test case')
+        self.send_msg(self.std_out_channel, f'{count} of {text} solved correctly.')
         
         count = 0
         for _ in range(self.num_random_test_cases):
@@ -437,7 +438,8 @@ class Exercise(TechioInteraction):
                 count += 1
 
         if self.num_random_test_cases > 0:
-            self.send_msg(self.std_out_channel, f'{count} of {self.num_random_test_cases} random test cases solved correctly.')
+            text = self.pluralize(self.num_random_test_cases, 'random test case')
+            self.send_msg(self.std_out_channel, f'{count} of {text} solved correctly.')
 
         if self.first_failed_test_case != None:
             self.fail()
@@ -564,64 +566,64 @@ class PrintBasedExercise(Exercise):
 
     def display_first_failed_test_case(self) -> None:
         expected_io_log = self.generate_answer(self.suggested_solution, self.first_failed_test_case)
-        user_io_log = self.generate_answer(self.user_solution, self.first_failed_test_case)
+        learner_io_log = self.generate_answer(self.learner_solution, self.first_failed_test_case)
 
         num_expected_calls_to_print = len(expected_io_log)
-        num_user_calls_to_print = len(user_io_log)
+        num_learner_calls_to_print = len(learner_io_log)
 
         expected_answer_string = expected_io_log.full_output()
-        user_answer_string = user_io_log.full_output()
+        learner_answer_string = learner_io_log.full_output()
 
         expected_answer = [] if not expected_answer_string else expected_answer_string.split('\n')
-        user_answer = [] if not user_answer_string else user_answer_string.split('\n')
+        learner_answer = [] if not learner_answer_string else learner_answer_string.split('\n')
 
         num_expected_lines = expected_io_log.num_lines_printed()
-        num_user_lines = user_io_log.num_lines_printed()
+        num_learner_lines = learner_io_log.num_lines_printed()
         verb = 'was' if num_expected_lines == 1 else 'were'
 
         expected_lines_str = self.pluralize(num_expected_lines, 'line')
-        user_lines_str = self.pluralize(num_user_lines, 'line')
+        learner_lines_str = self.pluralize(num_learner_lines, 'line')
 
         msg = ''
-        if num_user_calls_to_print > 0 and self.strict_print_usage and num_expected_calls_to_print != num_user_calls_to_print:
+        if num_learner_calls_to_print > 0 and self.strict_print_usage and num_expected_calls_to_print != num_learner_calls_to_print:
             expected_times_str = self.pluralize(num_expected_calls_to_print, 'time')
-            learner_times_str = self.pluralize(num_user_calls_to_print, 'time')
+            learner_times_str = self.pluralize(num_learner_calls_to_print, 'time')
             
-            if expected_answer_string == user_answer_string:
+            if expected_answer_string == learner_answer_string:
                 msg += 'The text you output is correct. However...\n\n'
             msg += f"Your solution called 'print' {learner_times_str}. "
             msg += f"The grader called 'print' {expected_times_str}.\n"
 
-        if num_user_lines == 0:
+        if num_learner_lines == 0:
             msg += f'You did not print anything. {expected_lines_str} of printed output {verb} expected.\n'
 
         elif num_expected_lines == 0:
-            msg += f'No lines of printed output were expected. You printed {user_lines_str}.\n'
+            msg += f'No lines of printed output were expected. You printed {learner_lines_str}.\n'
 
-        elif expected_answer != user_answer:
+        elif expected_answer != learner_answer:
             msg += ('\n' if msg else '') + 'First Failed Test Case:\n\n'
 
             msg += f'Your Output:'
-            if num_expected_lines != num_user_lines:
-                msg += f'   You printed {user_lines_str}. {expected_lines_str} {verb} expected.'
+            if num_expected_lines != num_learner_lines:
+                msg += f'   You printed {learner_lines_str}. {expected_lines_str} {verb} expected.'
 
             msg += '\n\n'
 
             error_found = False
-            while user_answer and expected_answer:
-                user_line = user_answer.pop(0)
+            while learner_answer and expected_answer:
+                learner_line = learner_answer.pop(0)
                 expected_line = expected_answer.pop(0)
 
-                msg += f'> {user_line}\n'
-                if user_line == expected_line:
+                msg += f'> {learner_line}\n'
+                if learner_line == expected_line:
                     continue
 
                 error_found=True
                 msg += f'\nThere is a problem with the most recent line of output. '
 
                 trailing_spaces = False
-                if user_line.startswith(expected_line):
-                    remaining_output = user_line[len(expected_line):]
+                if learner_line.startswith(expected_line):
+                    remaining_output = learner_line[len(expected_line):]
                     if all(c.isspace() for c in remaining_output):
                         msg += f'It appears you have unnecessary trailing spaces at the end '
                         msg += f'of your output line.\n'
@@ -635,14 +637,14 @@ class PrintBasedExercise(Exercise):
 
             if not error_found:
                 if len(expected_answer) == 0:
-                    too_many = len(user_answer)
+                    too_many = len(learner_answer)
                     msg += f'\nYour answer should have ended with {expected_lines_str} printed. The following '
                     msg += f'{too_many} line{"s" if too_many > 1 else ""} should not have been printed.\n\n'
 
-                    for line in user_answer:
+                    for line in learner_answer:
                         msg += f'> {line}\n'
 
-                if len(user_answer) == 0:
+                if len(learner_answer) == 0:
                     missing = len(expected_answer)
                     msg += f'\nYour answer is correct so far, but you are missing the following '
                     msg += f'{missing} line' + 's.'[missing == 1:] + '\n\n'

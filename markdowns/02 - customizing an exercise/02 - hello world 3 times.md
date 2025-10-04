@@ -131,7 +131,7 @@ def hello_world_3x(n=3) -> None:
 
 # Summary
 
-Even for a simple exercise, the variety of valid solutions shows how options like `strict_print_usage`, `max_lines_of_code` and `max_statement_count` could limit the number of accepted soltuions. These options can help you guide learners toward the style of solution you want to encourage. Let's put the results in a table and then take a look at ways to limit the number of solutions accepted as correct.
+Even for a simple exercise, the variety of valid solutions shows how options like `strict_print_usage`, `max_lines_of_code` and `max_statement_count` could limit the number of accepted solutions. These options can help you guide learners toward the style of solution you want to encourage. Let's put the results in a table and then take a look at ways to limit the number of solutions accepted as correct.
 
 | | Technique | Calls to Print | Lines of Code | Python Statements |
 |:--:|:-----------------:|:---:|:---:|:---:|

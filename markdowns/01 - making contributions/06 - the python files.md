@@ -31,7 +31,7 @@ Now, let’s take a closer look at each file so you know **exactly what to edit*
 
 # exercise_name.py
 
-The contents of this file are shown to the user in the code window. Keep it very short.
+The contents of this file are shown to the learner in the code window. Keep it very short.
 
 For exercises that have input parameters and return values (`pyskillz_tools.Exercise`), provide only a minimal function stub.
 
@@ -40,7 +40,7 @@ def exercise_name(a: int, b: int) -> int:
     return # Your code goes here.
 ```
 
-For exercises that take input and require the user to print an answer (`pyskillz_tools.PrintBasedExercise`), include a few extra comment lines. Since all `print` output is graded, remind users they can use `sys.stderr` for debug messages.
+For exercises that take input and require the learner to print an answer (`pyskillz_tools.PrintBasedExercise`), include a few extra comment lines. Since all `print` output is graded, remind learners they can use `sys.stderr` for debug messages.
 
 ```python
 def exercise_name(a: int, b: int) -> None:
@@ -53,7 +53,7 @@ def exercise_name(a: int, b: int) -> None:
 
 # exercise_name_solution.py
 
-This file contains the suggested solution along with any alternate soltuions. The primary solution is used by the grader to check correctness. Once the user completes the exercise successfully, the full contents of this file are displayed.
+This file contains the suggested solution along with any alternative solutions. The primary solution is used by the grader to check correctness. Once the learner completes the exercise successfully, the full contents of this file are displayed.
 
 For `pyskillz_tools.Exercise`:
 
@@ -101,9 +101,9 @@ except ImportError:
 ###############################################################################################################
 ```
 
-Next, define the message shown to the user when the exercise is completed successfully. Place this definition outside the class for easier formatting. A multiline string can be used to include elements like bullet points or even a short Q&A (e.g., a joke).
+Next, define the message shown to the learner when the exercise is completed successfully. Place this definition outside the class for easier formatting. A multiline string can be used to include elements like bullet points or even a short Q&A (e.g., a joke).
 
-For paragraphs that require automatic word wrapping, break the text into separate lines and concatenate them. This keeps the text easy to read in the code while still displaying correctly to the user.
+For paragraphs that require automatic word wrapping, break the text into separate lines and concatenate them. This keeps the text easy to read in the code while still displaying correctly to the learner.
 
 ```python
 success_message = '''

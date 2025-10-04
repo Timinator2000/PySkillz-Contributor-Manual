@@ -12,7 +12,7 @@ Because your GitHub branch isn’t connected to a playground like the main PySki
 
   * Run `exercise_name_test.py` in your terminal.
 
-  * When the exercise runs, you’ll see the __same output that users see in the playground__.
+  * When the exercise runs, you’ll see the __same output that learners see in the playground__.
 
   * Formatting is slightly adjusted for terminal display, but the __content is identical__.
 

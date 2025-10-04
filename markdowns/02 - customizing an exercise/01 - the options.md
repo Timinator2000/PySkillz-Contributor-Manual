@@ -23,7 +23,7 @@ If the built-in options aren’t enough, your exercise subclass can override thi
 * **`check_additional_solution_criteria`**
   Lets you add custom checks on the learner’s code beyond correctness and the built-in checks above. For instance, you could confirm that the solution includes at least one `for` loop, avoids certain functions, or uses recursion.
 
-Before finishing up, we'll also explore a couple other options for overriding methods, such as...
+Before finishing up, we'll also explore a couple of other options for overriding methods, such as...
 
 * **`test_case_to_string`**
   Determines how a test case is displayed to the learner. In most cases, the default behavior is sufficient — it lists each parameter with its value. Only override this if you need a custom presentation.
