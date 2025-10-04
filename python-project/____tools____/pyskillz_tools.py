@@ -1,4 +1,4 @@
-# Last Edited: Oct 4, 2025 1:44pm
+# Last Edited: Oct 4, 2025 3:08pm
 
 from copy import deepcopy
 from collections import namedtuple, Counter, defaultdict
@@ -71,7 +71,6 @@ class Channel():
 class TechioInteraction():
 
     RUNNING_ON_TECH_IO = __file__.startswith('/project/target')
-    # RUNNING_ON_TECH_IO = os.path.split(os.path.normpath(__file__))[0].startswith('/project/target')
 
     def __init__(self, exercise_path):
 
@@ -257,7 +256,6 @@ class TechioInteraction():
         return '\n'.join(text)
 
 
-
 class Exercise(TechioInteraction):
     
     PRINT_TEST_CASES = False
@@ -276,7 +274,10 @@ class Exercise(TechioInteraction):
 
         # Import the learner solution from exercise_name.py
         module = importlib.import_module(self.exercise_name)
-        self.learner_solution = getattr(module, self.exercise_name)
+        self.learner_solution = getattr(module, self.exercise_name, 'error')
+
+        if self.learner_solution == 'error':
+            self.send_msg(self.bug_channel, f'Your code must contain a function named \'{self.exercise_name}\'.')
 
         # Import the suggested solution from exercise_name_solution.py
         module = importlib.import_module(self.exercise_name + '_solution')
