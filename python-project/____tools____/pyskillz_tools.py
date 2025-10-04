@@ -278,6 +278,7 @@ class Exercise(TechioInteraction):
 
         if self.learner_solution == 'error':
             self.send_msg(self.bug_channel, f'Your code must contain a function named \'{self.exercise_name}\'.')
+            quit()
 
         # Import the suggested solution from exercise_name_solution.py
         module = importlib.import_module(self.exercise_name + '_solution')
