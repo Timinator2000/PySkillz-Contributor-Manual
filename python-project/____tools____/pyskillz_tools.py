@@ -734,6 +734,11 @@ class ExerciseTemplate():
         with open(filename, "r", encoding="utf-8") as f:
             text = f.read().split('\n')
 
+        for i, line in enumerate(text):
+            if '{or}' in line:
+                options = line.split(' {or} ')
+                text[i] = options[self.type == 'PrintBasedExercise']
+
         return text
     
 
