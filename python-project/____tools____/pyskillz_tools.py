@@ -738,6 +738,11 @@ class ExerciseTemplate():
             if '{or}' in line:
                 options = line.split(' {or} ')
                 text[i] = options[self.type == 'PrintBasedExercise']
+                
+            if 'return value or output' in line:
+                to_replace = 'return value or output'
+                options = line.split(' or ')
+                text[i] = text[i].replace(to_replace, options[self.type == 'PrintBasedExercise'])
 
         return text
     
