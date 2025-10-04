@@ -2,12 +2,13 @@
 
 ## 09/02/2025 - @Timinator - Double quotes on Tech.io
 
-In "Hello, World!", I was using double quotes inside a Python string surrounded by single quotes. This was inside the story I tell about the origin of the "Hello, World!" exercise. I was not able to get Tech.io to properly display the double quotes. Instead I am using unicode smart (curly) quotes inside Python strings that get displayed on Tech.io:
+In the “Hello, World!” exercise on the PySkillz playground, I used double quotes inside a Python string enclosed in single quotes as part of the story about the exercise’s origin. However, Tech.io did not display the double quotes correctly. If you want to include double quotes in a Tech.io channel, you can use Unicode smart (curly) quotes inside Python strings:
 
 * Left double quote: `“` (U+201C)
 
 * Right double quote: `”` (U+201D)
 
+Alternatively, you can avoid double quotes altogether and simply use single quotes `'`.
 
 <BR>
 

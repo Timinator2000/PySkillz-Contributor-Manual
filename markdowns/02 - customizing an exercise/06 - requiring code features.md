@@ -95,7 +95,7 @@ class HelloWorld3XWithAWhileLoop(pyskillz_tools.PrintBasedExercise):
         return 'Your solution must include a \'while\' loop.'
 ```
 
-Write your own solution or try any one of the solutions provided earlierl
+Write your own solution or try any one of the solutions provided earlier.
 
 @[Hello World 3 Times with a `while` Loop.]({"stubs": ["exercises/hello_world_3x_with_a_while_loop/hello_world_3x_with_a_while_loop.py"], "command": "python3 exercises/hello_world_3x_with_a_while_loop/hello_world_3x_with_a_while_loop_test.py"})
 

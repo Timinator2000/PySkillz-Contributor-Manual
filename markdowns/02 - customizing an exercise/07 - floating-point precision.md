@@ -1,6 +1,6 @@
 # Floating-Point Precision
 
-When grading exercises that return floating point numbers, **tiny differences in precision can cause correct solutions to fail**. For example, due to the way floating point arithmetic works, a learner might return `3.14159` while the grader expects `3.14`, resulting in a mismatch even though the values are essentially equivalent.
+When grading floating-point results, **minor representation errors can cause correct solutions to fail strict comparisons**. For example, a learner might return `0.30000000000000004` while the grader expects `0.3`. These tiny discrepancies stem from the inherent limitations of binary floating-point representation in Python and most languages. For a clear explanation, see the [Python documentation on floating-point arithmetic](https://docs.python.org/3/tutorial/floatingpoint.html).
 
 To avoid this, all floating point results are rounded to a fixed number of decimal places before comparison. By default, this is **2 decimal places**, but you can customize this behavior by setting the `floating_point_precision` attribute in your exercise subclass constructor.
 

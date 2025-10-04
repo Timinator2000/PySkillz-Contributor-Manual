@@ -31,7 +31,7 @@ To achieve this, simply override the `test_case_to_string` method:
 ```python
 def test_case_to_string(self, test_case) -> str:
     x1, y1, x2, y2 = test_case
-    return f'(x1, y1) = ({x1}, {y1})\n(x2, y2) = ({x2}, {y2})'
+    return f'(x1, y1) = {(x1, y1)}\n(x2, y2) = {(x2, y2)}'
 ```
 
 This customization makes the feedback clearer and more tailored to the problem you’re presenting.
