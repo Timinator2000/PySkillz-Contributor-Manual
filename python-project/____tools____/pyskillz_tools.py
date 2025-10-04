@@ -698,7 +698,9 @@ class ExerciseTemplate():
                         return f'All parameter names must be unique. \'{arg.arg}\' appears more than once.'
                     
                     if arg.arg == node.name:
-                        return f'All parameter names must be different than the function name. The function name, \'{arg.arg}\', is also a parameter name.'
+                        error = f'All parameter names must be different than the function name. '
+                        error += f'\'{arg.arg}\' is both the function name and a parameter name.'
+                        return error
                     
                     self.parameters.append(arg.arg)
                     if arg.annotation is None:
