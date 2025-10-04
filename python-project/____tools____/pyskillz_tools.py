@@ -277,6 +277,7 @@ class Exercise(TechioInteraction):
         self.learner_solution = getattr(module, self.exercise_name, 'error')
 
         if self.learner_solution == 'error':
+            self.fail()
             self.send_msg(self.bug_channel, f'Your code must contain a function named \'{self.exercise_name}\'.')
             quit()
 
